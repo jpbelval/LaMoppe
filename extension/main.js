@@ -20,6 +20,19 @@ addEventListener("keyup", async (event) => {
         lock = false;
 })
 
+document.addEventListener("click", (e) => {
+    const btn = document.getElementById("composer-submit-button");
+    if (!btn) return;
+
+    e.preventDefault();
+    e.stopImmediatePropagation();
+    e.stopPropagation();
+
+    console.log("fonctionne");
+  },
+  true 
+);
+
 function preSubmit() {
     const og = window.yr;
     console.log(og)
