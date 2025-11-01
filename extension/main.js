@@ -53,7 +53,34 @@ function checkPrevention(event) {
 // Check the prompt with AI
 function checkSafety() {
     // test 
-    let isNotSafe = false;
+    promptText = getText()
+    const apiUrl = 'http://localhost:5000/classifyText';
+    const postData = {
+        prompt: promptText
+    };
+    console.log(JSON.stringify(postData))
+
+    fetch(apiUrl, {
+        method: 'POST', 
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(postData)
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json();
+    })
+    .then(data => {
+        console.log('Success:', data);
+    })
+    .catch(error => {
+        console.error('Error during fetch operation:', error);
+    });
+
+    let isNotSafe = true;
     //check
     //si pas safe
     // laisse a vrai
