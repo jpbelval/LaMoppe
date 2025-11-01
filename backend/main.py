@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/classifyText", methods=["POST"])
 def classify():
-        text = request.form.get("prompt")
+        text = request.json.get("prompt")
         return f"prompt: {text}"
 
 
