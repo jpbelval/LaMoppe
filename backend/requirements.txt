@@ -1,2 +1,7 @@
 Flask
+flask-cors
 chromadb
+smolagents
+python-dotenv
+protobuf
+sentencepiece
