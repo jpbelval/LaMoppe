@@ -20,7 +20,9 @@ addEventListener("keyup", async (event) => {
 })
 
 document.addEventListener("click", (e) => {
-    const btn = document.getElementById("composer-submit-button");
+    const btn = e.target.closest(
+      "#composer-submit-button, [data-testid='send-button'], [aria-label='Send prompt']"
+    );
     if (!btn) return;
     e.preventDefault();
     e.stopImmediatePropagation();
