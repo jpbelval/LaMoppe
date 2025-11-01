@@ -1,9 +1,6 @@
 from smolagents import CodeAgent, FinalAnswerTool, InferenceClientModel
 from dotenv import load_dotenv
 import yaml
-from transformers import AutoModelForCausalLM, AutoTokenizer, pipeline
-import torch
-import json
 
 class SafetyAnalysis():
     def __init__(self, risk_level, private_data, safe_prompt ):
@@ -23,7 +20,7 @@ class SafetyIntelligence:
         model = InferenceClientModel(model_id='meta-llama/Llama-3.1-8B-Instruct')
         # model = InferenceClientModel(model_id="meta-llama/Llama-3.2-1B-Instruct")
 
-        with open("prompts.yaml", 'r') as stream:
+        with open("./prompts.yaml", 'r') as stream:
             prompt_templates = yaml.safe_load(stream)
 
         self.agent = CodeAgent(tools=[final_answer], model=model, prompt_templates=prompt_templates)

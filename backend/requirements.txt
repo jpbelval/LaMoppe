@@ -1,7 +1,5 @@
 Flask
 flask-cors
 chromadb
-smolagents
+smolagents==1.22.0
 python-dotenv
-protobuf
-sentencepiece
