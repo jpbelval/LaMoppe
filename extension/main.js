@@ -53,7 +53,7 @@ function checkPrevention(event) {
 // Check the prompt with AI
 function checkSafety() {
     // test 
-    let isNotSafe = true;
+    let isNotSafe = false;
     //check
     //si pas safe
     // laisse a vrai
