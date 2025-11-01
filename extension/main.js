@@ -21,13 +21,13 @@ addEventListener("keyup", async (event) => {
 })
 
 function preSubmit() {
-    //console.log('script roule');
-    let form = document.querySelector('form')
-    console.log(form)
-    
-    form.addEventListener("*", async (event) =>  {
-        console.log(event);
-    });
+    const og = window.yr;
+    console.log(og)
+    window.__sendMessage =  function(prompt) {
+        console.log('Intercept: ', prompt);
+
+        return  og.call(this, prompt)
+    }
 }
 
 function logSubmit(event) {
