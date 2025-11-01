@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "LaMoppe",
+  "version": "1.0",
+
+  "description": "Pour nettoyer vos prompts.",
+
+  "icons": {
+    "48": "icons/logo.png"
+  },
+
+  "permissions": [
+    "http://localhost/*",
+    "http://127.0.0.1/*",
+    "storage",
+    "activeTab",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.chatgpt.com/*"],
+      "js": ["main.js"]
+    }
+  ]
+}
