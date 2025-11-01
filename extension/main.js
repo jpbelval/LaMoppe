@@ -1,15 +1,38 @@
 document.body.style.border = "5px solid red";
-preSubmit();
+preSubmit()
 
+const lockKey = ["Shift", "Alt"]
+let lock = false;
+
+addEventListener("keydown", async (event) => {
+    if(lockKey.includes(event.key))
+        lock = true;
+    if(event.key === "Enter")
+        if(!lock && (getText() != '')) {
+            event.preventDefault()
+            console.log('send');
+        }
+})
+
+addEventListener("keyup", async (event) => {
+    console.log(getText())
+    if(lockKey.includes(event.key))
+        lock = false;
+})
 
 function preSubmit() {
     //console.log('script roule');
-    let abc = document.querySelector('form')
-    console.log(abc)
-    document.querySelector('form').addEventListener('onsubmit', async (event) =>  {
-        event.preventDefault();
-        console.log('fonctionne');
+    let form = document.querySelector('form')
+    console.log(form)
+    
+    form.addEventListener("*", async (event) =>  {
+        console.log(event);
     });
+}
+
+function logSubmit(event) {
+    console.log('fonctionne')
+    event.preventDefault();
 }
 
 function getText() {
