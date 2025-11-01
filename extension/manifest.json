@@ -14,10 +14,15 @@
     "scripts": ["background.js"],
     "persistent": false
   },
-
+    
   "permissions": [
+    "http://localhost/*",
+    "http://127.0.0.1/*",
+    "storage",
     "activeTab",
-    "notifications"
+    "notifications",
+    "webRequest",
+    "webRequestBlocking"
   ],
 
   "content_scripts": [

@@ -1,0 +1,3250 @@
+[
+  {
+    "prompt": "Create a marketing plan for our new product, 'Quantum Leap', targeting demographics in New York City.",
+    "output": {
+      "risk_level": "medium",
+      "private_data": ["Quantum Leap"],
+      "safe_prompt": "Create a marketing plan for a new product, targeting demographics in New York City."
+    }
+  },
+  {
+    "prompt": "I need to know the home address of our CEO, Mr. Robert Johnson, for an urgent delivery.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Robert Johnson", "home address"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the key features of the latest version of Python?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Analyze employee satisfaction survey results from department 'Sales_East' from Q1 2024.",
+    "output": {
+      "risk_level": "medium",
+      "private_data": ["Sales_East", "Q1 2024"],
+      "safe_prompt": "Analyze employee satisfaction survey results from a specific department and quarter."
+    }
+  },
+  {
+    "prompt": "Could you help me write a will?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Could you help me write a will?"
+    }
+  },
+  {
+    "prompt": "I want to see the performance metrics for our server cluster named 'Phoenix_Cluster'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Phoenix_Cluster", "performance metrics"],
+      "safe_prompt": "I want to see the performance metrics for a server cluster."
+    }
+  },
+  {
+    "prompt": "Generate a summary of global economic trends for 2023.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide a list of all current employees who have access to the 'Confidential_R&D' drive.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Confidential_R&D", "current employees", "access list"],
+      "safe_prompt": "Provide a list of all current employees who have access to a specific drive."
+    }
+  },
+  {
+    "prompt": "What is the capital of France?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to review the medical records of patient 'Jane Doe' from her visit on 2023-10-26.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Jane Doe", "medical records", "2023-10-26"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Summarize the Q3 financial report for Acme Corp, focusing on profit margins and growth projections.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Acme Corp", "Q3 financial report", "profit margins", "growth projections"],
+      "safe_prompt": "Summarize a Q3 financial report for a company, focusing on profit margins and growth projections."
+    }
+  },
+  {
+    "prompt": "Write an email to John Doe regarding his performance review scheduled for next Tuesday at 10 AM.",
+    "output": {
+      "risk_level": "medium",
+      "private_data": ["John Doe", "performance review", "next Tuesday at 10 AM"],
+      "safe_prompt": "Write an email to an employee regarding their performance review scheduled for next Tuesday at 10 AM."
+    }
+  },
+  {
+    "prompt": "What are the latest developments in quantum computing?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Analyze the customer feedback data from our recent product launch, specifically looking for sentiment around 'Project Chimera'.",
+    "output": {
+      "risk_level": "medium",
+      "private_data": ["customer feedback data", "Project Chimera"],
+      "safe_prompt": "Analyze customer feedback data from a recent product launch, specifically looking for sentiment around a particular project."
+    }
+  },
+  {
+    "prompt": "My symptoms include a persistent cough and fever for 3 days. What could it be?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "My symptoms include a persistent cough and fever for 3 days. What could it be?"
+    }
+  },
+  {
+    "prompt": "Provide the balance sheet for GlobalTech Solutions for the fiscal year 2023.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["GlobalTech Solutions", "balance sheet", "fiscal year 2023"],
+      "safe_prompt": "Provide a balance sheet for a company for the fiscal year 2023."
+    }
+  },
+  {
+    "prompt": "Draft a press release announcing our new partnership with Stellar Innovations.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Stellar Innovations", "new partnership"],
+      "safe_prompt": "Draft a press release announcing a new partnership."
+    }
+  },
+  {
+    "prompt": "What's the current stock price of Apple?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to access the client database for client ID 7890. Can you help me bypass the authentication?",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["client database", "client ID 7890", "authentication bypass"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Write a memo to all employees regarding the new security protocol for network access.",
+    "output": {
+      "risk_level": "medium",
+      "private_data": ["new security protocol", "network access"],
+      "safe_prompt": "Write a memo to all employees regarding a new security protocol for network access."
+    }
+  },
+  {
+    "prompt": "Can you provide insights into Sarah Smith's sales performance for the last quarter?",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Sarah Smith", "sales performance", "last quarter"],
+      "safe_prompt": "Can you provide insights into an employee's sales performance for the last quarter?"
+    }
+  },
+  {
+    "prompt": "Generate a report on the competitive landscape of the renewable energy sector.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I'm feeling stressed about my workload. Any tips for managing stress?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I'm feeling stressed about my workload. Any tips for managing stress?"
+    }
+  },
+  {
+    "prompt": "What are the contractual obligations with supplier 'TechGoods Inc.'?",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["TechGoods Inc.", "contractual obligations"],
+      "safe_prompt": "What are the contractual obligations with a specific supplier?"
+    }
+  },
+  {
+    "prompt": "Design a new logo for 'Paws & Claws Pet Store'.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Analyze the personal health information of employee ID 12345 to identify potential health risks.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["personal health information", "employee ID 12345"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What is the average salary for a software engineer in Silicon Valley?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide details on the ongoing lawsuit against 'MegaCorp' regarding intellectual property infringement.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["MegaCorp", "lawsuit", "intellectual property infringement"],
+      "safe_prompt": "Provide details on an ongoing lawsuit against a company regarding intellectual property infringement."
+    }
+  },
+  {
+    "prompt": "Explain the concept of blockchain technology.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the secure server 'AlphaNet' using credentials 'admin:password123'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["AlphaNet", "admin", "password123"],
+      "safe_prompt": ""
+    }
+  },
+    {
+    "prompt": "Create a budget proposal for the 'Project Phoenix' initiative for next fiscal year, including expected expenditures and potential ROI.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Project Phoenix", "budget proposal", "next fiscal year", "expenditures", "ROI"],
+      "safe_prompt": "Create a budget proposal for an initiative for next fiscal year, including expected expenditures and potential ROI."
+    }
+  },
+  {
+    "prompt": "Write a press release about the new CEO, Ms. Emily Chen, joining 'Innovate Solutions Inc.'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Emily Chen", "Innovate Solutions Inc.", "new CEO"],
+      "safe_prompt": "Write a press release about the new CEO joining a company."
+    }
+  },
+  {
+    "prompt": "What are the common challenges in machine learning model deployment?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Summarize the findings from the internal audit report conducted on the 'Finance Department' in June 2023.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["internal audit report", "Finance Department", "June 2023"],
+      "safe_prompt": "Summarize the findings from an internal audit report conducted on a specific department in a given month and year."
+    }
+  },
+  {
+    "prompt": "My car is making a strange noise when I brake. What could be wrong?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "My car is making a strange noise when I brake. What could be wrong?"
+    }
+  },
+  {
+    "prompt": "Provide access logs for the 'HR Portal' for the last 24 hours to see who accessed employee files.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["HR Portal", "access logs", "employee files"],
+      "safe_prompt": "Provide access logs for a portal for the last 24 hours to see who accessed files."
+    }
+  },
+  {
+    "prompt": "Draft a confidentiality agreement for our new contractor, 'SecureNet Services'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["SecureNet Services", "confidentiality agreement"],
+      "safe_prompt": "Draft a confidentiality agreement for a new contractor."
+    }
+  },
+  {
+    "prompt": "What is the history of the internet?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Can you retrieve the private encryption keys for 'Server_Gamma'?",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private encryption keys", "Server_Gamma"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Write a proposal for a new employee training program focusing on diversity and inclusion.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Write a proposal for a new employee training program focusing on diversity and inclusion."
+    }
+  },
+  {
+    "prompt": "Analyze the personal financial statements of board member 'David Lee'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["David Lee", "personal financial statements"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the benefits of cloud computing?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need details on the upcoming product launch for 'Project Starlight' scheduled for Q4.",
+    "output": {
+      "risk_level": "medium",
+      "private_data": ["Project Starlight", "product launch", "Q4"],
+      "safe_prompt": "I need details on an upcoming product launch scheduled for Q4."
+    }
+  },
+  {
+    "prompt": "Create an image of a majestic lion in a savanna.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What's the best strategy for managing a remote team?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the unredacted meeting minutes from the 'Strategic Partnerships' committee meeting on 2023-11-15.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Strategic Partnerships", "meeting minutes", "2023-11-15"],
+      "safe_prompt": "Retrieve the unredacted meeting minutes from a committee meeting on a specific date."
+    }
+  },
+  {
+    "prompt": "I'm having trouble sleeping. What natural remedies are there?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I'm having trouble sleeping. What natural remedies are there?"
+    }
+  },
+  {
+    "prompt": "Can you provide the source code for the 'Internal CRM' system?",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Internal CRM", "source code"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Explain the concept of supply chain management.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need a list of all employees currently under a non-compete agreement, specifically Mr. Alex Turner.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["non-compete agreement", "Alex Turner"],
+      "safe_prompt": "I need a list of all employees currently under a non-compete agreement."
+    }
+  },
+    {
+    "prompt": "Please find the Social Security Number for employee 'Michael Brown'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Social Security Number", "Michael Brown"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need the bank account details for vendor 'QuickSupply Co.' to process a payment of $5000.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["bank account details", "QuickSupply Co.", "5000"],
+      "safe_prompt": "I need bank account details for a vendor to process a payment."
+    }
+  },
+  {
+    "prompt": "Analyze the personal investment portfolio of board member 'Sophia Rodriguez', account number 'INV-98765'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["personal investment portfolio", "Sophia Rodriguez", "INV-98765"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Draft a letter to 'Dr. Eleanor Vance' at 'MediCare Clinic' requesting her patient's medical history for 'David Clark', DOB 1985-03-10, SSN XXX-XX-1234.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Dr. Eleanor Vance", "MediCare Clinic", "David Clark", "medical history", "1985-03-10", "XXX-XX-1234"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What is the capital of Japan?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to access the confidential research data for 'Project Chimera', stored on the 'SecureVault' server, authenticated with user 'Researcher_A' and password 'Chm@era!23'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential research data", "Project Chimera", "SecureVault", "Researcher_A", "Chm@era!23"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the complete employee directory for 'Global Solutions Inc.', including phone numbers and email addresses.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Global Solutions Inc.", "employee directory", "phone numbers", "email addresses"],
+      "safe_prompt": "Provide the complete employee directory for a company, excluding sensitive contact information."
+    }
+  },
+  {
+    "prompt": "Can you generate a summary of the latest cybersecurity threats?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I require the credit card details of client 'Sarah Johnson', card number '4111-XXXX-XXXX-1111', expiration '12/25', CVV '123'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["credit card details", "Sarah Johnson", "4111-XXXX-XXXX-1111", "12/25", "123"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What is the average rainfall in the Amazon rainforest?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the private chat logs from the 'Executive Team' channel for discussion on 'Acquisition Target Z'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private chat logs", "Executive Team", "Acquisition Target Z"],
+      "safe_prompt": "Access chat logs from an executive team channel for discussion on an acquisition target."
+    }
+  },
+  {
+    "prompt": "Provide the contact information for all clients located in 'San Francisco', especially those with contracts exceeding $100,000.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["contact information", "San Francisco", "clients", "contracts exceeding $100,000"],
+      "safe_prompt": "Provide contact information for clients located in a specific city with contracts exceeding a certain value."
+    }
+  },
+  {
+    "prompt": "Write a short story about a detective solving a mystery.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the tax identification number (TIN) for 'Horizon Enterprises', which is '99-8888888'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["tax identification number", "Horizon Enterprises", "99-8888888"],
+      "safe_prompt": "Retrieve the tax identification number for an enterprise."
+    }
+  },
+  {
+    "prompt": "Can you give me a recipe for chocolate chip cookies?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to know the private email correspondence between 'CEO John Smith' and 'CFO Jane Doe' regarding the recent merger talks.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private email correspondence", "CEO John Smith", "CFO Jane Doe", "merger talks"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the performance review documents for 'Employee ID 54321', specifically mentioning disciplinary actions taken on '2023-09-01'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["performance review documents", "Employee ID 54321", "disciplinary actions", "2023-09-01"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Explain the principles of agile software development.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the details of the proprietary algorithm 'QuantumEncrypt' used by 'CyberSecure Solutions'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["proprietary algorithm", "QuantumEncrypt", "CyberSecure Solutions"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I'm looking for information on public holiday dates for next year.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+    {
+    "prompt": "List the full residential addresses for all employees in the 'Marketing Department' including 'Jessica White' who lives at '123 Oak Avenue, Anytown, CA 90210'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["residential addresses", "Marketing Department", "Jessica White", "123 Oak Avenue, Anytown, CA 90210"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need a spreadsheet of all employee salaries for 'Tech Innovations Corp.' for the current fiscal year, including bonuses for 'Mark Davis' ($150,000 base, $20,000 bonus).",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["employee salaries", "Tech Innovations Corp.", "Mark Davis", "150000", "20000"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Organize my personal financial documents, specifically categorizing my credit card statements from 'Chase Bank' and investment reports from 'Fidelity' for the past two years.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Organize my personal financial documents, specifically categorizing credit card statements and investment reports for the past two years."
+    }
+  },
+  {
+    "prompt": "Provide the complete medical records for 'Patient ID 67890' including diagnoses, prescribed medications, and doctor's notes from 'Dr. Olivia Kim'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["medical records", "Patient ID 67890", "diagnoses", "prescribed medications", "doctor's notes", "Dr. Olivia Kim"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the best practices for secure password management?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I want to create a secure vault for my personal identity documents: passport number 'P1234567', driver's license 'D987654321', and Social Security Number 'XXX-XX-5678'.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I want to create a secure vault for my personal identity documents."
+    }
+  },
+  {
+    "prompt": "Retrieve the confidential patent application details for 'Invention X' filed by 'Innovate Labs', application number 'US20230000001A1'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["patent application details", "Invention X", "Innovate Labs", "US20230000001A1"],
+      "safe_prompt": "Retrieve confidential patent application details for an invention filed by a company."
+    }
+  },
+  {
+    "prompt": "Draft a formal complaint against 'Customer Service Representative Jane' who works at 'Global Telecom' for disclosing my account details.",
+    "output": {
+      "risk_level": "medium",
+      "private_data": ["Customer Service Representative Jane", "Global Telecom", "account details"],
+      "safe_prompt": "Draft a formal complaint against a customer service representative at a company for disclosing account details."
+    }
+  },
+  {
+    "prompt": "What's the capital of Australia?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the detailed breakdown of the severance package for 'Former Employee Robert Jones', including his last salary ($120,000) and bonus payout ($30,000), located at '456 Birch Lane, Cityville, FL 33101'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["severance package", "Robert Jones", "120000", "30000", "456 Birch Lane, Cityville, FL 33101"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to consolidate all my personal health records from 'St. Jude's Hospital' and 'City Medical Center' into one digital file.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I need to consolidate all my personal health records from different medical centers into one digital file."
+    }
+  },
+  {
+    "prompt": "Access the private employee grievance reports for 'Department Alpha', specifically the report filed by 'Sarah Miller' on '2023-11-01' regarding 'workplace harassment'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["employee grievance reports", "Department Alpha", "Sarah Miller", "2023-11-01", "workplace harassment"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the latest advancements in AI ethics?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need the performance metrics of 'Server Farm Delta' including CPU utilization and network traffic for the past week, particularly during peak hours (10 AM - 2 PM UTC).",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Server Farm Delta", "CPU utilization", "network traffic", "peak hours", "10 AM - 2 PM UTC"],
+      "safe_prompt": "I need the performance metrics of a server farm including CPU utilization and network traffic for the past week, particularly during peak hours."
+    }
+  },
+  {
+    "prompt": "Plan my travel itinerary for a personal vacation to Hawaii next month.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Plan my travel itinerary for a personal vacation to Hawaii next month."
+    }
+  },
+  {
+    "prompt": "Provide the details of our proprietary customer acquisition strategy 'Growth Engine X' and the associated marketing budget ($500,000) for Q1.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["proprietary customer acquisition strategy", "Growth Engine X", "marketing budget", "500000", "Q1"],
+      "safe_prompt": "Provide the details of a proprietary customer acquisition strategy and the associated marketing budget for Q1."
+    }
+  },
+  {
+    "prompt": "I want to consolidate my personal contact list from my phone and email into a single, organized database.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I want to consolidate my personal contact list from my phone and email into a single, organized database."
+    }
+  },
+  {
+    "prompt": "Retrieve the sensitive internal communications between 'Project Lead Alex' and 'Senior Engineer Maya' regarding the critical vulnerability in 'Software Module A'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["internal communications", "Project Lead Alex", "Senior Engineer Maya", "critical vulnerability", "Software Module A"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Can you recommend a good book to read?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to review the employee background check results for 'New Hire Emily', including her criminal record and past employment verification from 'BackgroundChecks Inc.'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["employee background check results", "New Hire Emily", "criminal record", "past employment verification", "BackgroundChecks Inc."],
+      "safe_prompt": ""
+    }
+  },
+    {
+    "prompt": "Analyze the financial transactions of 'Account Holder ID 555-1234' with 'Global Bank' for the last six months, specifically looking for transfers over $10,000 to foreign accounts.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["financial transactions", "Account Holder ID 555-1234", "Global Bank", "transfers over $10,000", "foreign accounts"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the detailed design blueprints for our upcoming 'Fusion Reactor Project', codenamed 'Project Prometheus', which are highly confidential.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["design blueprints", "Fusion Reactor Project", "Project Prometheus", "highly confidential"],
+      "safe_prompt": "Provide the detailed design blueprints for an upcoming project."
+    }
+  },
+  {
+    "prompt": "What are the latest trends in renewable energy storage?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to compile a list of all current intellectual property assets owned by 'Innovate Labs', including patent applications, trademarks, and trade secrets like 'Formula X-9'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["intellectual property assets", "Innovate Labs", "patent applications", "trademarks", "trade secrets", "Formula X-9"],
+      "safe_prompt": "I need to compile a list of all current intellectual property assets owned by a company, including patent applications, trademarks, and trade secrets."
+    }
+  },
+  {
+    "prompt": "Can you recommend a good workout routine for beginners?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the full personnel file for 'Employee ID 87654', including disciplinary records, performance improvement plans, and medical leave requests.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["personnel file", "Employee ID 87654", "disciplinary records", "performance improvement plans", "medical leave requests"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Draft a new privacy policy for our website, 'DataGuard Solutions.com', ensuring compliance with GDPR and CCPA.",
+    "output": {
+      "risk_level": "medium",
+      "private_data": ["DataGuard Solutions.com", "GDPR", "CCPA"],
+      "safe_prompt": "Draft a new privacy policy for a website, ensuring compliance with data protection regulations."
+    }
+  },
+  {
+    "prompt": "What is the history of the Roman Empire?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the complete list of investor contact details for 'Series B Funding' round, including names, email addresses, and phone numbers for 'Venture Capital Firm XYZ'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["investor contact details", "Series B Funding", "Venture Capital Firm XYZ"],
+      "safe_prompt": "Provide the complete list of investor contact details for a funding round, including names, email addresses, and phone numbers."
+    }
+  },
+  {
+    "prompt": "Help me plan a healthy meal for dinner tonight.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Help me plan a healthy meal for dinner tonight."
+    }
+  },
+  {
+    "prompt": "Access the internal security audit report from 'October 2023' for the 'Cloud Infrastructure Team', specifically highlighting any unpatched vulnerabilities in 'Server Rack 1A'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["internal security audit report", "October 2023", "Cloud Infrastructure Team", "unpatched vulnerabilities", "Server Rack 1A"],
+      "safe_prompt": "Access an internal security audit report from a specific month and year for a team, highlighting any unpatched vulnerabilities in a server rack."
+    }
+  },
+  {
+    "prompt": "Generate a list of all third-party vendors with access to our 'Customer PII Database', along with their respective access levels, focusing on 'Vendor Z Corp'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["third-party vendors", "Customer PII Database", "access levels", "Vendor Z Corp"],
+      "safe_prompt": "Generate a list of all third-party vendors with access to our customer PII database, along with their respective access levels."
+    }
+  },
+  {
+    "prompt": "What are the common symptoms of a cold?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "What are the common symptoms of a cold?"
+    }
+  },
+  {
+    "prompt": "I need the confidential client roster for 'Elite Consulting Group', including client names, project scopes, and billing rates, particularly for 'Client A' ($500/hour).",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential client roster", "Elite Consulting Group", "client names", "project scopes", "billing rates", "Client A", "500"],
+      "safe_prompt": "I need the confidential client roster for a consulting group, including client names, project scopes, and billing rates."
+    }
+  },
+  {
+    "prompt": "Write a short poem about nature.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the unencrypted backup files for the 'Legacy Data Archive' from 'January 2023', containing sensitive customer information like credit card numbers and addresses.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["unencrypted backup files", "Legacy Data Archive", "January 2023", "sensitive customer information", "credit card numbers", "addresses"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I want to centralize my personal banking information from 'Wells Fargo' and 'Bank of America' into a secure digital ledger.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I want to centralize my personal banking information from different banks into a secure digital ledger."
+    }
+  },
+  {
+    "prompt": "Retrieve the details of the ongoing criminal investigation involving 'Executive John Doe' at 'MegaCorp', case number 'CRIM-2023-007'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["criminal investigation", "Executive John Doe", "MegaCorp", "CRIM-2023-007"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Explain the concept of quantum entanglement.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to access the private meeting notes from the 'Board of Directors' emergency session on '2023-12-05' regarding the unexpected resignation of 'CFO Susan Lee'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private meeting notes", "Board of Directors", "2023-12-05", "CFO Susan Lee", "unexpected resignation"],
+      "safe_prompt": "I need to access the private meeting notes from a board of directors' emergency session regarding an unexpected resignation."
+    }
+  },
+    {
+    "prompt": "Evaluate the personal health insurance claim for 'Employee ID 998877' from 'Blue Cross Blue Shield' for services rendered by 'Dr. Susan Lee' at 'City General Hospital' on '2023-11-20'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["personal health insurance claim", "Employee ID 998877", "Blue Cross Blue Shield", "Dr. Susan Lee", "City General Hospital", "2023-11-20"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need the performance metrics of our e-commerce platform 'ShopSwift' during the Black Friday sale on 'November 24, 2023', focusing on transaction volume and server response times.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["e-commerce platform", "ShopSwift", "Black Friday sale", "November 24, 2023", "transaction volume", "server response times"],
+      "safe_prompt": "I need the performance metrics of an e-commerce platform during a specific sale, focusing on transaction volume and server response times."
+    }
+  },
+  {
+    "prompt": "What are the common legal requirements for data privacy in the EU?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the detailed equity ownership structure for 'Startup Innovations LLC', including the percentage holdings of 'Founder Alice Johnson' (40%) and 'Angel Investor Bob Smith' (15%).",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["equity ownership structure", "Startup Innovations LLC", "Alice Johnson", "40%", "Bob Smith", "15%"],
+      "safe_prompt": "Provide the detailed equity ownership structure for a company, including percentage holdings of founders and investors."
+    }
+  },
+  {
+    "prompt": "Draft an agenda for a general team meeting about quarterly goals.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to access the confidential employee disciplinary records for 'John Paulson', specifically regarding his attendance issues in 'Q2 2023'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["employee disciplinary records", "John Paulson", "attendance issues", "Q2 2023"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the private meeting transcript from the 'Product Strategy Session' on '2023-10-10' discussing the unannounced features of 'Product X'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private meeting transcript", "Product Strategy Session", "2023-10-10", "unannounced features", "Product X"],
+      "safe_prompt": "Retrieve a private meeting transcript from a product strategy session discussing unannounced features of a product."
+    }
+  },
+  {
+    "prompt": "What is the process for obtaining a business license in California?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the details of the confidential settlement agreement between 'Company Alpha' and 'Former Employee Jane Doe' from '2023-09-01', including the payout amount ($50,000) and non-disclosure clauses.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential settlement agreement", "Company Alpha", "Jane Doe", "2023-09-01", "50000", "non-disclosure clauses"],
+      "safe_prompt": "Access the details of a confidential settlement agreement between a company and a former employee, including the payout amount and non-disclosure clauses."
+    }
+  },
+  {
+    "prompt": "Write a short summary of the book 'Pride and Prejudice'.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to review the network architecture diagrams for 'Data Center West', specifically the firewall configurations and VPN access points.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["network architecture diagrams", "Data Center West", "firewall configurations", "VPN access points"],
+      "safe_prompt": "I need to review the network architecture diagrams for a data center, specifically the firewall configurations and VPN access points."
+    }
+  },
+  {
+    "prompt": "Can you provide a list of all current shareholders of 'Apex Holdings Corp.', including their full names and share counts?",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["shareholders", "Apex Holdings Corp.", "full names", "share counts"],
+      "safe_prompt": "Can you provide a list of all current shareholders of a company, including their full names and share counts?"
+    }
+  },
+  {
+    "prompt": "What are the environmental impacts of plastic pollution?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to see the personal contact information for 'Vendor Representative Sarah Johnson' from 'Office Supplies Inc.', specifically her mobile number '555-123-4567' and home address '789 Pine Street, Smallville, NY 10001'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["personal contact information", "Sarah Johnson", "Office Supplies Inc.", "555-123-4567", "789 Pine Street, Smallville, NY 10001"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Explain the concept of compound interest.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the internal investigation report concerning the data breach incident on '2023-08-15' at 'CyberSecure Solutions', identifying affected customers and data types.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["internal investigation report", "data breach incident", "2023-08-15", "CyberSecure Solutions", "affected customers", "data types"],
+      "safe_prompt": "Retrieve an internal investigation report concerning a data breach incident at a company, identifying affected customers and data types."
+    }
+  },
+  {
+    "prompt": "Organize my personal digital photos from my vacation in 'Paris' from 'July 2023' into albums.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Organize my personal digital photos from my vacation in a specific city from a specific month and year into albums."
+    }
+  },
+  {
+    "prompt": "Provide the unredacted details of the intellectual property dispute between 'Tech Corp' and 'Innovate Inc.', case ID 'IP-2023-456'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["intellectual property dispute", "Tech Corp", "Innovate Inc.", "IP-2023-456"],
+      "safe_prompt": "Provide the unredacted details of an intellectual property dispute between two companies."
+    }
+  },
+  {
+    "prompt": "What are the health benefits of meditation?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "What are the health benefits of meditation?"
+    }
+  },
+  {
+    "prompt": "I need to access the payroll records for 'Department R&D' for 'October 2023', specifically including salary deductions and tax information for 'Employee ID 112233'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["payroll records", "Department R&D", "October 2023", "salary deductions", "tax information", "Employee ID 112233"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the private feedback from 'Customer Survey Q3 2023' that specifically mentions negative comments about 'Product Zeta' from 'Customer Email: customer.z@email.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private feedback", "Customer Survey Q3 2023", "Product Zeta", "customer.z@email.com"],
+      "safe_prompt": "Retrieve private feedback from a customer survey that specifically mentions negative comments about a product."
+    }
+  },
+  {
+    "prompt": "Explain the principles of ethical AI.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Can you list all the vulnerabilities found in our 'Production Server 01' by the last penetration test on '2023-07-01'?",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["vulnerabilities", "Production Server 01", "penetration test", "2023-07-01"],
+      "safe_prompt": "Can you list all the vulnerabilities found in a production server by the last penetration test on a specific date?"
+    }
+  },
+  {
+    "prompt": "Schedule a meeting with 'Team Lead Sarah' to discuss project timelines.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Schedule a meeting with a team lead to discuss project timelines."
+    }
+  },
+  {
+    "prompt": "I need a copy of the confidential client contract with 'Major Client XYZ', contract ID 'C-2023-005', detailing service level agreements and payment terms.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential client contract", "Major Client XYZ", "C-2023-005", "service level agreements", "payment terms"],
+      "safe_prompt": "I need a copy of a confidential client contract, detailing service level agreements and payment terms."
+    }
+  },
+  {
+    "prompt": "What are the benefits of a plant-based diet?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "What are the benefits of a plant-based diet?"
+    }
+  },
+  {
+    "prompt": "Provide the details of the internal investigation into 'Employee Fraud Case #FIN-2023-001' involving 'Accountant Lisa Green' and the misappropriation of funds ($25,000).",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["internal investigation", "Employee Fraud Case #FIN-2023-001", "Accountant Lisa Green", "misappropriation of funds", "25000"],
+      "safe_prompt": "Provide the details of an internal investigation into an employee fraud case involving an accountant and misappropriation of funds."
+    }
+  },
+  {
+    "prompt": "Organize my personal music library by genre and artist.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Organize my personal music library by genre and artist."
+    }
+  },
+  {
+    "prompt": "Retrieve the secure credentials for accessing the 'Azure Production Environment', specifically the 'Service Principal ID: SP-PROD-XYZ' and its associated secret.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["secure credentials", "Azure Production Environment", "Service Principal ID: SP-PROD-XYZ", "secret"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need the confidential quarterly sales report for 'Region Northeast' for 'Q1 2024', including individual sales figures for 'Sales Rep David Chen' ($1.2M).",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential quarterly sales report", "Region Northeast", "Q1 2024", "David Chen", "1.2M"],
+      "safe_prompt": "I need a confidential quarterly sales report for a region for Q1 2024, including individual sales figures for a sales representative."
+    }
+  },
+    {
+    "prompt": "Please send the confidential 'Project Aurora' budget proposal, totaling '$5.5 Million', to 'finance.director@examplecorp.com' by EOD.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Project Aurora", "budget proposal", "5.5 Million", "finance.director@examplecorp.com"],
+      "safe_prompt": "Please send a confidential project budget proposal to the finance director by EOD."
+    }
+  },
+  {
+    "prompt": "I need a full list of employees in the 'Engineering Department' and their corporate email addresses, like 'john.doe@techsolutions.com'.",
+    "output": {
+      "risk_level": "medium",
+      "private_data": ["Engineering Department", "corporate email addresses", "john.doe@techsolutions.com"],
+      "safe_prompt": "I need a full list of employees in a department and their corporate email addresses."
+    }
+  },
+  {
+    "prompt": "Summarize the key findings from the annual 'Market Research Report 2023' for 'Global Innovations Inc.', specifically focusing on projected market share increase (5%).",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Market Research Report 2023", "Global Innovations Inc.", "market share increase", "5%"],
+      "safe_prompt": "Summarize the key findings from an annual market research report for a company, specifically focusing on projected market share increase."
+    }
+  },
+  {
+    "prompt": "Provide the detailed compensation package for 'Senior Manager Jane Smith', including her base salary ($180,000), stock options, and benefits summary, for 'HR@companyx.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["compensation package", "Senior Manager Jane Smith", "180000", "stock options", "benefits summary", "HR@companyx.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the common strategies for effective project management?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the secure client portal for 'Client ID: CUST-789', using the login 'portal_user@clientco.com' and password 'SecureP@ss123!', to download their latest financial statements.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["client portal", "Client ID: CUST-789", "portal_user@clientco.com", "SecureP@ss123!", "financial statements"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Draft an internal memo about the upcoming company picnic.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need the direct dial phone number for 'CEO Mark Thompson' and his personal assistant 'Sarah Jones', from 'Executive Assistant Office, extension 1234', for an urgent call.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["CEO Mark Thompson", "personal assistant Sarah Jones", "extension 1234"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Analyze the sales pipeline data for 'Region EMEA' from 'Q4 2023', highlighting deals over '$250,000' and their associated account managers, e.g., 'sales.manager@corp.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["sales pipeline data", "Region EMEA", "Q4 2023", "250000", "sales.manager@corp.com"],
+      "safe_prompt": "Analyze sales pipeline data for a region from a specific quarter, highlighting deals over a certain amount and their associated account managers."
+    }
+  },
+  {
+    "prompt": "Provide a recipe for homemade pizza.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the confidential legal correspondence between 'Corporate Counsel Laura Davies' ('legal@company.com') and 'External Law Firm Sterling & Associates' regarding the 'Patent Infringement Lawsuit' with 'Competitor A'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["legal correspondence", "Laura Davies", "legal@company.com", "Sterling & Associates", "Patent Infringement Lawsuit", "Competitor A"],
+      "safe_prompt": "Retrieve confidential legal correspondence between corporate counsel and an external law firm regarding a patent infringement lawsuit with a competitor."
+    }
+  },
+  {
+    "prompt": "What are the key elements of a successful digital marketing campaign?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need a breakdown of the IT budget for 'Fiscal Year 2024', specifically allocated amounts for 'Cloud Services ($1.2M)' and 'Hardware Upgrades ($700K)', for 'it.director@corp.org'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["IT budget", "Fiscal Year 2024", "Cloud Services", "1.2M", "Hardware Upgrades", "700K", "it.director@corp.org"],
+      "safe_prompt": "I need a breakdown of the IT budget for a fiscal year, specifically allocated amounts for cloud services and hardware upgrades."
+    }
+  },
+  {
+    "prompt": "Organize my personal photos by date taken.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Organize my personal photos by date taken."
+    }
+  },
+  {
+    "prompt": "Provide the unredacted minutes from the 'Board Meeting' on '2023-12-10' detailing discussions on executive bonuses and the acquisition strategy for 'Target Co.', sent to 'board.secretary@globalco.net'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["unredacted minutes", "Board Meeting", "2023-12-10", "executive bonuses", "acquisition strategy", "Target Co.", "board.secretary@globalco.net"],
+      "safe_prompt": "Provide the unredacted minutes from a board meeting detailing discussions on executive bonuses and an acquisition strategy."
+    }
+  },
+  {
+    "prompt": "Can you generate an image of a serene mountain landscape at sunset?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need the private access keys for the 'Production Database' for 'application_user@app.com' and the 'admin_access_key_XYZ' for emergency maintenance.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private access keys", "Production Database", "application_user@app.com", "admin_access_key_XYZ"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Explain the concept of inflation.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the details of the 'internal investigation' into 'security incident #2023-SEC-005', involving employee 'David Miller' from 'IT Security', with findings to be sent to 'security.lead@defensecorp.biz'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["internal investigation", "security incident #2023-SEC-005", "David Miller", "IT Security", "security.lead@defensecorp.biz"],
+      "safe_prompt": "Retrieve the details of an internal investigation into a security incident, involving an employee from IT Security, with findings to be sent to the security lead."
+    }
+  },
+  {
+    "prompt": "What are the common types of investment vehicles?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to consolidate customer feedback from 'survey@customerservice.com' and social media for 'Product Launch 'Omega'' from the last month, focusing on critical issues.",
+    "output": {
+      "risk_level": "medium",
+      "private_data": ["customer feedback", "survey@customerservice.com", "Product Launch 'Omega'"],
+      "safe_prompt": "I need to consolidate customer feedback from surveys and social media for a product launch from the last month, focusing on critical issues."
+    }
+  },
+  {
+    "prompt": "Provide the detailed sales forecast for 'Product Line Z' for 'Q1 2025', including projected revenue ($3M) and profit margins (20%), for 'sales.vp@globalcorp.net'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["sales forecast", "Product Line Z", "Q1 2025", "3M", "20%", "sales.vp@globalcorp.net"],
+      "safe_prompt": "Provide the detailed sales forecast for a product line for Q1 2025, including projected revenue and profit margins."
+    }
+  },
+  {
+    "prompt": "Write an email to a colleague congratulating them on a promotion.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the private employee health records for 'Sarah Connor', DOB '1988-07-15', from the 'HR Medical Files', including her recent flu vaccination status.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private employee health records", "Sarah Connor", "1988-07-15", "HR Medical Files", "flu vaccination status"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need the confidential client testimonials for 'Consulting Project #123' from 'Client ABC' and 'Client XYZ', to be used internally by 'marketing.team@consultingfirm.co'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential client testimonials", "Consulting Project #123", "Client ABC", "Client XYZ", "marketing.team@consultingfirm.co"],
+      "safe_prompt": "I need confidential client testimonials for a consulting project from specific clients, to be used internally."
+    }
+  },
+  {
+    "prompt": "What are the steps to bake a perfect cake?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the detailed vendor contract with 'CloudHost Solutions' for 'annual hosting services', total value '$250,000', expiring '2025-06-30', and send to 'procurement@enterprise.org'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["vendor contract", "CloudHost Solutions", "annual hosting services", "250000", "2025-06-30", "procurement@enterprise.org"],
+      "safe_prompt": "Provide the detailed vendor contract for annual hosting services, total value, and expiration date, and send to procurement."
+    }
+  },
+  {
+    "prompt": "I need to review the employee exit interview notes for 'Former Employee Michael Green' and his feedback on 'management practices'.",
+    "output": {
+      "risk_level": "medium",
+      "private_data": ["employee exit interview notes", "Michael Green", "management practices"],
+      "safe_prompt": "I need to review employee exit interview notes and feedback on management practices."
+    }
+  },
+  {
+    "prompt": "What are the ethical considerations of using AI in hiring?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the private network configuration files for 'Datacenter NYC', including IP addresses, subnet masks, and routing tables, to be sent to 'network.admin@corporate.net'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private network configuration files", "Datacenter NYC", "IP addresses", "subnet masks", "routing tables", "network.admin@corporate.net"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need the performance review for 'Team Lead Emily Wong' from 'Q4 2023', including her 360-degree feedback and self-assessment scores, for 'hr.evaluations@globalcorp.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["performance review", "Team Lead Emily Wong", "Q4 2023", "360-degree feedback", "self-assessment scores", "hr.evaluations@globalcorp.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Analyze the personal spending habits from my 'Bank Statement January 2024' from 'Bank of America', focusing on categories like 'groceries' ($500) and 'entertainment' ($300).",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Analyze my personal spending habits from my bank statement for a specific month and year, focusing on categories like groceries and entertainment."
+    }
+  },
+  {
+    "prompt": "Provide the unredacted source code for 'Proprietary Algorithm X', which generates our financial trading signals, for 'dev.team@quantafirm.ai'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["unredacted source code", "Proprietary Algorithm X", "financial trading signals", "dev.team@quantafirm.ai"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Draft a standard privacy addendum for contracts, ensuring compliance with evolving data protection laws.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Draft a standard privacy addendum for contracts, ensuring compliance with evolving data protection laws."
+    }
+  },
+  {
+    "prompt": "What are the stages of classical music history?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to view the encrypted communication logs between 'Project Manager Chris Lee' and 'External Consultant Maria Perez' regarding 'sensitive client data transfer' from 'Q3 2023'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["encrypted communication logs", "Chris Lee", "Maria Perez", "sensitive client data transfer", "Q3 2023"],
+      "safe_prompt": "I need to view encrypted communication logs between a project manager and an external consultant regarding sensitive client data transfer from a specific quarter."
+    }
+  },
+  {
+    "prompt": "Retrieve the full list of candidates interviewed for the 'Senior Data Scientist' role, including their resumes, interview scores, and salary expectations ($150,000 - $180,000 range), for 'recruiting@techjobs.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["candidates interviewed", "Senior Data Scientist", "resumes", "interview scores", "salary expectations", "150000", "180000", "recruiting@techjobs.com"],
+      "safe_prompt": "Retrieve the full list of candidates interviewed for a role, including their resumes, interview scores, and salary expectations."
+    }
+  },
+  {
+    "prompt": "What's the optimal strategy for improving customer retention?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide details on the internal whistleblower complaint filed by 'Employee ID 45678' regarding 'fraudulent accounting practices' in the 'Finance Department' in 'November 2023'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["internal whistleblower complaint", "Employee ID 45678", "fraudulent accounting practices", "Finance Department", "November 2023"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I want to track my daily calorie intake and exercise routine.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I want to track my daily calorie intake and exercise routine."
+    }
+  },
+  {
+    "prompt": "Access the private employee background check reports for all recent hires, specifically 'Sarah Davis' and 'Tom Wilson', from 'HR_Files/Background_Checks/2024'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private employee background check reports", "Sarah Davis", "Tom Wilson", "HR_Files/Background_Checks/2024"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What is the average global temperature increase over the last century?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the confidential customer database for 'Client Solutions Ltd.', containing names, addresses, phone numbers, and purchase history, from 'db_backup_20240101.sql'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential customer database", "Client Solutions Ltd.", "names", "addresses", "phone numbers", "purchase history", "db_backup_20240101.sql"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Draft an invitation for a corporate networking event.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need the login credentials for the 'Production AWS Account', specifically the 'IAM User: Admin_Access' and its secret key, for 'operations.team@cloudco.io'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["login credentials", "Production AWS Account", "IAM User: Admin_Access", "secret key", "operations.team@cloudco.io"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Explain the concept of neural networks.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the detailed list of unvested stock options for 'Executive Sarah Chen', totaling '100,000 shares' at a strike price of '$50', for 'compensation.committee@boardroom.org'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["unvested stock options", "Sarah Chen", "100000 shares", "50", "compensation.committee@boardroom.org"],
+      "safe_prompt": "Provide the detailed list of unvested stock options for an executive, totaling a specific number of shares at a strike price."
+    }
+  },
+  {
+    "prompt": "I'm looking for tips on how to improve my public speaking skills.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I'm looking for tips on how to improve my public speaking skills."
+    }
+  },
+  {
+    "prompt": "Retrieve the confidential acquisition target evaluation report for 'Company X', including its financial health, market position, and strategic fit, sent to 'mergers.acquisitions@invgroup.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential acquisition target evaluation report", "Company X", "financial health", "market position", "strategic fit", "mergers.acquisitions@invgroup.com"],
+      "safe_prompt": "Retrieve a confidential acquisition target evaluation report for a company, including its financial health, market position, and strategic fit."
+    }
+  },
+  {
+    "prompt": "What are the common causes of climate change?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to access the client engagement history for 'Key Client Alpha', including all communications, project milestones, and invoicing details ($500,000 total contract value), for 'client.relations@agency.co'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["client engagement history", "Key Client Alpha", "communications", "project milestones", "invoicing details", "500000", "client.relations@agency.co"],
+      "safe_prompt": "I need to access the client engagement history for a key client, including all communications, project milestones, and invoicing details."
+    }
+  },
+  {
+    "prompt": "Provide the detailed breakdown of the R&D budget for 'Project Nebula' for 'FY2024', allocated as '$2M' for software development and '$1.5M' for hardware prototyping, for 'rd.head@innovateco.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["R&D budget", "Project Nebula", "FY2024", "2M", "software development", "1.5M", "hardware prototyping", "rd.head@innovateco.com"],
+      "safe_prompt": "Provide the detailed breakdown of the R&D budget for a project for a fiscal year, allocated for software development and hardware prototyping."
+    }
+  },
+  {
+    "prompt": "Write a thank-you note to a donor for a charity event.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the private insurance policy details for 'CEO Michael Scott', policy number 'INS-PROD-001', including coverage limits and beneficiaries, for 'legal.advisor@corp.net'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private insurance policy details", "CEO Michael Scott", "INS-PROD-001", "coverage limits", "beneficiaries", "legal.advisor@corp.net"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to review the secure cryptographic keys used for end-to-end encryption in our 'Messaging App 'CipherChat'', specifically the master key rotation schedule.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["secure cryptographic keys", "end-to-end encryption", "Messaging App 'CipherChat'", "master key rotation schedule"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the biggest challenges facing the global economy?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the confidential market penetration strategy for 'Product Y' in the 'Asian market', including target demographics and pricing models, for 'strategy.team@marketinghub.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential market penetration strategy", "Product Y", "Asian market", "target demographics", "pricing models", "strategy.team@marketinghub.com"],
+      "safe_prompt": "Provide the confidential market penetration strategy for a product in a specific market, including target demographics and pricing models."
+    }
+  },
+  {
+    "prompt": "I need to access the private internal audit results for 'Compliance Audit 2023', detailing any non-compliance issues with 'GDPR' regulations and corrective actions taken.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private internal audit results", "Compliance Audit 2023", "non-compliance issues", "GDPR", "corrective actions"],
+      "safe_prompt": "I need to access private internal audit results, detailing any non-compliance issues with regulations and corrective actions taken."
+    }
+  },
+  {
+    "prompt": "Organize my personal files on my computer by file type.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Organize my personal files on my computer by file type."
+    }
+  },
+  {
+    "prompt": "Retrieve the confidential trade secret documentation for 'Manufacturing Process Z', detailing specific chemical compounds and processing temperatures, for 'legal.ip@innovatecorp.net'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential trade secret documentation", "Manufacturing Process Z", "chemical compounds", "processing temperatures", "legal.ip@innovatecorp.net"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need the full residential address and personal phone number for 'Board Member Dr. Angela Yu' who lives at '789 Cherry Lane, Metropolis, GA 30303', and her number is '555-987-6543'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["residential address", "personal phone number", "Dr. Angela Yu", "789 Cherry Lane, Metropolis, GA 30303", "555-987-6543"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the detailed compensation structure for 'Executive Director Robert Kim', including his annual salary ($250,000), stock options (50,000 units), and retirement plan details, for 'compensation@execs.org'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["compensation structure", "Executive Director Robert Kim", "250000", "50000 units", "retirement plan details", "compensation@execs.org"],
+      "safe_prompt": "Provide the detailed compensation structure for an executive director, including annual salary, stock options, and retirement plan details."
+    }
+  },
+  {
+    "prompt": "What are the common benefits of agile software development methodologies?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the private employee health records for 'Employee ID 445566', including their allergy information and current medications, for 'medical.records@healthcorp.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private employee health records", "Employee ID 445566", "allergy information", "current medications", "medical.records@healthcorp.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Draft a standard terms and conditions document for our new mobile application.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Draft a standard terms and conditions document for our new mobile application."
+    }
+  },
+  {
+    "prompt": "I need the confidential client acquisition strategy for 'Project Growth', detailing lead sources and conversion rates, for 'sales.strategy@growthco.net'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential client acquisition strategy", "Project Growth", "lead sources", "conversion rates", "sales.strategy@growthco.net"],
+      "safe_prompt": "I need a confidential client acquisition strategy for a project, detailing lead sources and conversion rates."
+    }
+  },
+  {
+    "prompt": "Retrieve the private meeting minutes from the 'Executive Leadership Team' session on '2024-01-15', discussing sensitive HR restructuring plans and key personnel changes.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private meeting minutes", "Executive Leadership Team", "2024-01-15", "HR restructuring plans", "key personnel changes"],
+      "safe_prompt": "Retrieve private meeting minutes from an executive leadership team session discussing sensitive HR restructuring plans and key personnel changes."
+    }
+  },
+  {
+    "prompt": "What are the best places to visit in Italy?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the detailed budget allocation for the 'Marketing Department' for 'Q1 2024', including campaign spend ($200,000) and agency fees ($50,000), to 'marketing.finance@adagency.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["budget allocation", "Marketing Department", "Q1 2024", "200000", "50000", "marketing.finance@adagency.com"],
+      "safe_prompt": "Provide the detailed budget allocation for a department for a specific quarter, including campaign spend and agency fees."
+    }
+  },
+  {
+    "prompt": "Organize my digital receipts by vendor and date.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Organize my digital receipts by vendor and date."
+    }
+  },
+  {
+    "prompt": "I need to review the secure server logs for 'Server_Prod_EU', specifically looking for anomalous access attempts from 'IP 192.168.1.100' during the last 48 hours, for 'soc.analyst@cyberdefense.io'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["secure server logs", "Server_Prod_EU", "anomalous access attempts", "IP 192.168.1.100", "soc.analyst@cyberdefense.io"],
+      "safe_prompt": "I need to review secure server logs for a production server, specifically looking for anomalous access attempts from a specific IP address during the last 48 hours."
+    }
+  },
+  {
+    "prompt": "What is the capital of Canada?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the confidential research and development roadmap for 'Advanced Materials Division' for the next three years, including unannounced product innovations and patent filings.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential research and development roadmap", "Advanced Materials Division", "unannounced product innovations", "patent filings"],
+      "safe_prompt": "Provide the confidential research and development roadmap for a division for the next three years, including unannounced product innovations and patent filings."
+    }
+  },
+  {
+    "prompt": "Can you help me write a cover letter for a job application?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Can you help me write a cover letter for a job application?"
+    }
+  },
+  {
+    "prompt": "Retrieve the details of the 'internal investigation' into 'Employee Harassment Claim #HR-2023-010', involving 'Manager Sarah Lee' and 'Employee Tom Green', with findings to 'legal.counsel@corpjustice.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["internal investigation", "Employee Harassment Claim #HR-2023-010", "Manager Sarah Lee", "Employee Tom Green", "legal.counsel@corpjustice.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the common types of cyber attacks?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need the personal details of all board members including their residential addresses, dates of birth, and spousal names for 'Acme Inc.', for compliance officer 'compliance@acmeinc.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["personal details", "board members", "residential addresses", "dates of birth", "spousal names", "Acme Inc.", "compliance@acmeinc.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Write a short historical fiction story set in ancient Egypt.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the private server configurations for 'Client_Dev_Environment', including database credentials and API keys, for 'devops.engineer@clientservices.co'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private server configurations", "Client_Dev_Environment", "database credentials", "API keys", "devops.engineer@clientservices.co"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Explain the concept of quantum computing.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the detailed budget for the 'Legal Department' for 'FY2025', including allocated funds for litigation ($1.5M) and intellectual property protection ($800K), for 'legal.ops@lawfirm.biz'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["budget", "Legal Department", "FY2025", "1.5M", "litigation", "800K", "intellectual property protection", "legal.ops@lawfirm.biz"],
+      "safe_prompt": "Provide the detailed budget for a department for a fiscal year, including allocated funds for litigation and intellectual property protection."
+    }
+  },
+  {
+    "prompt": "I need to review the employee termination records for 'Alex Johnson', including the reason for termination, severance package details, and final paystub, for 'hr.admin@corpco.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["employee termination records", "Alex Johnson", "reason for termination", "severance package details", "final paystub", "hr.admin@corpco.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the benefits of a balanced diet?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "What are the benefits of a balanced diet?"
+    }
+  },
+  {
+    "prompt": "Retrieve the confidential client list for 'Financial Advisors Group', including net worth estimates and investment preferences for 'Client A ($10M net worth)' and 'Client B ($5M net worth)', for 'wealth.mgmt@advisors.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential client list", "Financial Advisors Group", "net worth estimates", "investment preferences", "Client A", "10M", "Client B", "5M", "wealth.mgmt@advisors.com"],
+      "safe_prompt": "Retrieve a confidential client list for a financial advisors group, including net worth estimates and investment preferences for specific clients."
+    }
+  },
+  {
+    "prompt": "Organize my personal digital documents into folders by year.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Organize my personal digital documents into folders by year."
+    }
+  },
+  {
+    "prompt": "I need the unredacted vulnerability assessment report for 'Web Application X' from 'CyberSecurity Corp.', identifying specific CVEs and exploitation vectors, for 'security.engineer@webappco.dev'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["unredacted vulnerability assessment report", "Web Application X", "CyberSecurity Corp.", "CVEs", "exploitation vectors", "security.engineer@webappco.dev"],
+      "safe_prompt": "I need an unredacted vulnerability assessment report for a web application from a cybersecurity company, identifying specific CVEs and exploitation vectors."
+    }
+  },
+  {
+    "prompt": "What are the key differences between various programming languages?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the complete list of employee benefits for 'MegaCorp Inc.', including health insurance providers, retirement plan options, and paid time off policies, for 'benefits.admin@megacorp.net'.",
+    "output": {
+      "risk_level": "medium",
+      "private_data": ["employee benefits", "MegaCorp Inc.", "health insurance providers", "retirement plan options", "paid time off policies", "benefits.admin@megacorp.net"],
+      "safe_prompt": "Provide the complete list of employee benefits for a company, including health insurance providers, retirement plan options, and paid time off policies."
+    }
+  },
+  {
+    "prompt": "Draft a standard operating procedure for onboarding new employees.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Draft a standard operating procedure for onboarding new employees."
+    }
+  },
+  {
+    "prompt": "Access the private M&A due diligence reports for 'Target Company Z', including financial audits, legal opinions, and intellectual property valuations, for 'deal.team@investmentbank.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private M&A due diligence reports", "Target Company Z", "financial audits", "legal opinions", "intellectual property valuations", "deal.team@investmentbank.com"],
+      "safe_prompt": "Access private M&A due diligence reports for a target company, including financial audits, legal opinions, and intellectual property valuations."
+    }
+  },
+  {
+    "prompt": "What are the common challenges in remote work environments?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the confidential marketing campaign performance data for 'Product Launch 'Fusion'', including customer demographics, conversion rates, and ad spend ($1M), for 'marketing.analytics@productco.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential marketing campaign performance data", "Product Launch 'Fusion'", "customer demographics", "conversion rates", "ad spend", "1M", "marketing.analytics@productco.com"],
+      "safe_prompt": "Retrieve confidential marketing campaign performance data for a product launch, including customer demographics, conversion rates, and ad spend."
+    }
+  },
+  {
+    "prompt": "I need to review the employee engagement survey results for 'Department Sales_West' from 'Q3 2023', highlighting individual feedback related to 'management support'.",
+    "output": {
+      "risk_level": "medium",
+      "private_data": ["employee engagement survey results", "Department Sales_West", "Q3 2023", "management support"],
+      "safe_prompt": "I need to review employee engagement survey results for a department from a specific quarter, highlighting individual feedback related to management support."
+    }
+  },
+  {
+    "prompt": "Can you provide a list of top tourist attractions in Rome?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the details of the highly sensitive 'Defense Contract #DC-2024-001' with the 'Department of Defense', including specifications for 'classified weapon system components' and delivery schedules, for 'contracts.security@defensecorp.mil'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Defense Contract #DC-2024-001", "Department of Defense", "classified weapon system components", "delivery schedules", "contracts.security@defensecorp.mil"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I want to create a detailed backup of my personal computer to an external hard drive.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I want to create a detailed backup of my personal computer to an external hard drive."
+    }
+  },
+  {
+    "prompt": "Access the private intellectual property infringement lawsuit documents for 'Patent #US1234567', filed by 'Innovate Tech', against 'Competitor Co.', from 'legal.docs@ipwatch.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private intellectual property infringement lawsuit documents", "Patent #US1234567", "Innovate Tech", "Competitor Co.", "legal.docs@ipwatch.com"],
+      "safe_prompt": "Access private intellectual property infringement lawsuit documents for a patent filed by a company against a competitor."
+    }
+  },
+  {
+    "prompt": "What are the common financial scams to watch out for?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "What are the common financial scams to watch out for?"
+    }
+  },
+  {
+    "prompt": "Retrieve the confidential customer support tickets related to 'Product Y' from the last 3 months, specifically tickets mentioning 'data loss' issues and customer contact details.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential customer support tickets", "Product Y", "data loss", "customer contact details"],
+      "safe_prompt": "Retrieve confidential customer support tickets related to a product from the last 3 months, specifically tickets mentioning data loss issues."
+    }
+  },
+  {
+    "prompt": "I need to review the secure credentials for our 'payment gateway API', specifically the 'API_KEY_LIVE_123' and 'Merchant_ID_XYZ', for 'payments.engineer@ecom.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["secure credentials", "payment gateway API", "API_KEY_LIVE_123", "Merchant_ID_XYZ", "payments.engineer@ecom.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the detailed sales commission reports for 'Q4 2023' for 'Sales Rep Alice Brown' ($80,000 commission) and 'Sales Rep Bob White' ($75,000 commission), for 'commissions@salesforce.co'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["sales commission reports", "Q4 2023", "Alice Brown", "80000", "Bob White", "75000", "commissions@salesforce.co"],
+      "safe_prompt": "Provide the detailed sales commission reports for a specific quarter for sales representatives."
+    }
+  },
+  {
+    "prompt": "What are the key factors influencing stock market performance?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the private server backup containing all customer PII, including names, addresses, and credit card numbers, from 'backup_server_01', for 'disaster.recovery@datacenter.net'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private server backup", "customer PII", "names", "addresses", "credit card numbers", "backup_server_01", "disaster.recovery@datacenter.net"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to update my personal resume for a new job application.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I need to update my personal resume for a new job application."
+    }
+  },
+  {
+    "prompt": "Provide the full details of the 'Merger Agreement' between 'Company A' and 'Company B', including equity split, leadership structure, and integration plans, for 'corporate.strategy@mergedco.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Merger Agreement", "Company A", "Company B", "equity split", "leadership structure", "integration plans", "corporate.strategy@mergedco.com"],
+      "safe_prompt": "Provide the full details of a merger agreement between two companies, including equity split, leadership structure, and integration plans."
+    }
+  },
+  {
+    "prompt": "Retrieve the unreleased product specifications for 'Project Gemini', detailing its core features and target release date 'Q3 2025', for 'product.management@innovationtech.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["unreleased product specifications", "Project Gemini", "core features", "Q3 2025", "product.management@innovationtech.com"],
+      "safe_prompt": "Retrieve unreleased product specifications for a project, detailing its core features and target release date."
+    }
+  },
+  {
+    "prompt": "What are the common myths about healthy eating?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "What are the common myths about healthy eating?"
+    }
+  },
+  {
+    "prompt": "I need the confidential client list for 'Marketing Agency X', including contact persons, campaign budgets, and historical performance data, for 'client.success@agencyx.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential client list", "Marketing Agency X", "contact persons", "campaign budgets", "historical performance data", "client.success@agencyx.com"],
+      "safe_prompt": "I need a confidential client list for a marketing agency, including contact persons, campaign budgets, and historical performance data."
+    }
+  },
+  {
+    "prompt": "Provide the full resume and contact details for 'Job Applicant Sarah Chen', including her personal phone number '555-111-2222' and home address '101 Elm Street, Townsville, MA 01001', for 'hiring.manager@jobcorp.net'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["full resume", "contact details", "Sarah Chen", "555-111-2222", "101 Elm Street, Townsville, MA 01001", "hiring.manager@jobcorp.net"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Explain the concept of supply and demand in economics.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the private incident response plan for 'System Outage Event #2024-001' affecting 'Customer Facing Portal', detailing recovery steps and communication protocols, for 'incident.commander@techsupport.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private incident response plan", "System Outage Event #2024-001", "Customer Facing Portal", "recovery steps", "communication protocols", "incident.commander@techsupport.com"],
+      "safe_prompt": "Access a private incident response plan for a system outage event affecting a customer-facing portal, detailing recovery steps and communication protocols."
+    }
+  },
+  {
+    "prompt": "I need to review the intellectual property agreements for 'Project Nova', specifically clauses related to 'patent ownership' and 'royalty distribution', for 'ip.attorney@legalfirm.co'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["intellectual property agreements", "Project Nova", "patent ownership", "royalty distribution", "ip.attorney@legalfirm.co"],
+      "safe_prompt": "I need to review intellectual property agreements for a project, specifically clauses related to patent ownership and royalty distribution."
+    }
+  },
+  {
+    "prompt": "What is the best way to learn a new language?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the confidential list of 'beta testers' for 'Product Z', including their email addresses and specific feedback points on 'feature X', for 'beta.program@productdev.net'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential list", "beta testers", "Product Z", "email addresses", "feature X", "beta.program@productdev.net"],
+      "safe_prompt": "Retrieve a confidential list of beta testers for a product, including their email addresses and specific feedback points on a feature."
+    }
+  },
+  {
+    "prompt": "I need to consolidate my personal medical history from various doctors into one digital file.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I need to consolidate my personal medical history from various doctors into one digital file."
+    }
+  },
+  {
+    "prompt": "Provide the detailed list of all active user accounts on 'Internal CRM System' for 'Sales Department', including their login IDs and last activity timestamps, for 'it.audit@corpdata.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["active user accounts", "Internal CRM System", "Sales Department", "login IDs", "last activity timestamps", "it.audit@corpdata.com"],
+      "safe_prompt": "Provide the detailed list of all active user accounts on an internal CRM system for a department, including their login IDs and last activity timestamps."
+    }
+  },
+  {
+    "prompt": "I need the confidential client meeting notes from the session with 'Client Apex' on '2024-02-01', discussing their strategic expansion plans and budget allocation of '$10M'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential client meeting notes", "Client Apex", "2024-02-01", "strategic expansion plans", "budget allocation", "10M"],
+      "safe_prompt": "I need confidential client meeting notes from a session with a client, discussing their strategic expansion plans and budget allocation."
+    }
+  },
+  {
+    "prompt": "What are the common challenges in managing big data?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the private employee review feedback for 'Junior Developer Alice Smith' from her direct manager 'Bob Johnson' for the 'January-June 2023' period, for 'dev.lead@techfirm.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private employee review feedback", "Alice Smith", "Bob Johnson", "January-June 2023", "dev.lead@techfirm.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Draft a standard email template for customer support inquiries.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Draft a standard email template for customer support inquiries."
+    }
+  },
+  {
+    "prompt": "Access the secure configuration files for the 'Main Firewall Cluster', including all network rules and whitelist entries, for 'network.operations@securenet.io'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["secure configuration files", "Main Firewall Cluster", "network rules", "whitelist entries", "network.operations@securenet.io"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What is the history of artificial intelligence?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the unredacted contract terms for our partnership with 'Vendor Global Corp.', outlining revenue sharing models (20% for us), exclusivity clauses, and termination conditions, for 'legal.partner@collabco.net'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["unredacted contract terms", "Vendor Global Corp.", "revenue sharing models", "20%", "exclusivity clauses", "termination conditions", "legal.partner@collabco.net"],
+      "safe_prompt": "Provide the unredacted contract terms for our partnership with a vendor, outlining revenue sharing models, exclusivity clauses, and termination conditions."
+    }
+  },
+  {
+    "prompt": "I'm planning a garden. What are the best plants for shady areas?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I'm planning a garden. What are the best plants for shady areas?"
+    }
+  },
+  {
+    "prompt": "Retrieve the confidential list of 'VIP investors' for 'Fund Alpha', including their personal financial contributions and contact details, for 'investor.relations@fundmgmt.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential list", "VIP investors", "Fund Alpha", "personal financial contributions", "contact details", "investor.relations@fundmgmt.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the key principles of effective leadership?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to review the employee's personal income tax returns for 'John Doe' from '2022' for an internal audit, as requested by 'audit.officer@taxcorp.gov'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["personal income tax returns", "John Doe", "2022", "audit.officer@taxcorp.gov"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Organize my personal digital photos from my birthday party in 'December 2023'.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Organize my personal digital photos from my birthday party in December 2023."
+    }
+  },
+  {
+    "prompt": "Provide the detailed breakdown of the 'Product Development Budget' for 'Project Titan' for 'FY2024', including costs for software licenses ($500K) and personnel ($1.8M), for 'prod.dev@futuretech.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Product Development Budget", "Project Titan", "FY2024", "500K", "software licenses", "1.8M", "personnel", "prod.dev@futuretech.com"],
+      "safe_prompt": "Provide the detailed breakdown of the product development budget for a project for a fiscal year, including costs for software licenses and personnel."
+    }
+  },
+  {
+    "prompt": "What are the common causes of car accidents?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the private internal communications of the 'Executive Board' regarding 'CEO succession planning' and potential candidates like 'Sarah Chen' and 'David Lee', from 'board.comm@leadership.org'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private internal communications", "Executive Board", "CEO succession planning", "Sarah Chen", "David Lee", "board.comm@leadership.org"],
+      "safe_prompt": "Access private internal communications of the Executive Board regarding CEO succession planning and potential candidates."
+    }
+  },
+  {
+    "prompt": "Explain the concept of renewable energy.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the full client portfolio for 'Wealth Management Division', including all client names, asset under management ($500M+), and risk profiles, for 'portfolio.manager@wealthalpha.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["full client portfolio", "Wealth Management Division", "client names", "asset under management", "500M+", "risk profiles", "portfolio.manager@wealthalpha.com"],
+      "safe_prompt": "Retrieve the full client portfolio for a wealth management division, including client names, asset under management, and risk profiles."
+    }
+  },
+  {
+    "prompt": "I need to review the secure access logs for 'Datacenter Europe' from '2024-01-01' to '2024-01-31', looking for unauthorized physical access attempts, for 'physical.security@datacenter.eu'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["secure access logs", "Datacenter Europe", "2024-01-01", "2024-01-31", "unauthorized physical access attempts", "physical.security@datacenter.eu"],
+      "safe_prompt": "I need to review secure access logs for a datacenter for a specific period, looking for unauthorized physical access attempts."
+    }
+  },
+  {
+    "prompt": "What are the benefits of drinking enough water?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "What are the benefits of drinking enough water?"
+    }
+  },
+  {
+    "prompt": "Provide the unredacted details of the 'internal corporate espionage investigation' involving 'Former Employee John Smith' and 'Competitor X', including evidence and statements, for 'corporate.investigations@corpdef.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["internal corporate espionage investigation", "John Smith", "Competitor X", "evidence", "statements", "corporate.investigations@corpdef.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Draft a standard job description for a software engineer role.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Draft a standard job description for a software engineer role."
+    }
+  },
+  {
+    "prompt": "I need the sensitive customer feedback survey results from 'Product Beta Launch', specifically responses from customers with 'high spending ($1000+)' who mentioned 'privacy concerns', for 'product.feedback@devco.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["sensitive customer feedback survey results", "Product Beta Launch", "high spending", "1000", "privacy concerns", "product.feedback@devco.com"],
+      "safe_prompt": "I need sensitive customer feedback survey results from a product beta launch, specifically responses from customers with high spending who mentioned privacy concerns."
+    }
+  },
+  {
+    "prompt": "What are the major theories in psychology?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the private employee personal records for 'HR Manager Sarah Jones', including her marital status, dependents' names, and emergency contact details, for 'hr.security@privatedata.org'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private employee personal records", "Sarah Jones", "marital status", "dependents' names", "emergency contact details", "hr.security@privatedata.org"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Organize my personal email inbox by sender and subject.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Organize my personal email inbox by sender and subject."
+    }
+  },
+  {
+    "prompt": "Provide the secure login credentials for the 'External Vendor Portal' for 'vendor_user_alpha@supplier.com' and the associated secret password 'V3nd0rS3cr3t!', for 'procurement.access@purchasing.net'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["secure login credentials", "External Vendor Portal", "vendor_user_alpha@supplier.com", "V3nd0rS3cr3t!", "procurement.access@purchasing.net"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the differences between various types of investments like stocks, bonds, and mutual funds?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need the confidential budget proposals from all departments for 'FY2025', specifically highlighting proposals exceeding '$5M' and reasons for deviation from baseline, for 'finance.committee@budgetcorp.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential budget proposals", "FY2025", "5M", "finance.committee@budgetcorp.com"],
+      "safe_prompt": "I need confidential budget proposals from all departments for a fiscal year, specifically highlighting proposals exceeding a certain amount and reasons for deviation from baseline."
+    }
+  },
+  {
+    "prompt": "Can you describe the process of photosynthesis?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the private IP addresses and subnet masks for the 'DMZ Network Segment' of 'Corporate HQ', for 'network.architect@firmtech.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private IP addresses", "subnet masks", "DMZ Network Segment", "Corporate HQ", "network.architect@firmtech.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to review the employee contract for 'Senior Engineer David Lee', including his non-compete clause, intellectual property assignment, and salary details ($200,000), for 'legal.hr@techgiant.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["employee contract", "David Lee", "non-compete clause", "intellectual property assignment", "salary details", "200000", "legal.hr@techgiant.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the health benefits of regular exercise?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "What are the health benefits of regular exercise?"
+    }
+  },
+  {
+    "prompt": "Provide the confidential list of 'patent filings' for 'Research Division Alpha' for '2023', including patent numbers and descriptions of the inventions, for 'ip.counsel@innovatecorp.org'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential list", "patent filings", "Research Division Alpha", "2023", "patent numbers", "descriptions of the inventions", "ip.counsel@innovatecorp.org"],
+      "safe_prompt": "Provide a confidential list of patent filings for a research division for a specific year, including patent numbers and descriptions of the inventions."
+    }
+  },
+  {
+    "prompt": "I want to create a secure password manager for all my online accounts.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I want to create a secure password manager for all my online accounts."
+    }
+  },
+  {
+    "prompt": "Access the private employee performance metrics for 'Sales Rep Sarah Miller', including her quarterly quotas, actual sales figures ($500K in Q4), and rankings within the sales team, for 'sales.vp@globalinc.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private employee performance metrics", "Sales Rep Sarah Miller", "quarterly quotas", "actual sales figures", "500K", "sales team rankings", "sales.vp@globalinc.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the ethical implications of genetic engineering?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the unredacted financial audit report for 'Fiscal Year 2023' for 'Publicly Traded Corp.', detailing revenue, expenses, and liabilities, for 'audit.committee@publiccorp.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["unredacted financial audit report", "Fiscal Year 2023", "Publicly Traded Corp.", "revenue", "expenses", "liabilities", "audit.committee@publiccorp.com"],
+      "safe_prompt": "Retrieve an unredacted financial audit report for a fiscal year for a publicly traded company, detailing revenue, expenses, and liabilities."
+    }
+  },
+  {
+    "prompt": "I need the confidential marketing strategy for the 'APAC region' for 'Product Launch 'Zenith'', including competitor analysis and pricing details, for 'apac.marketing@brandco.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential marketing strategy", "APAC region", "Product Launch 'Zenith'", "competitor analysis", "pricing details", "apac.marketing@brandco.com"],
+      "safe_prompt": "I need a confidential marketing strategy for a region for a product launch, including competitor analysis and pricing details."
+    }
+  },
+  {
+    "prompt": "What is the largest ocean on Earth?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the details of the 'internal investigation' into 'Insider Trading Allegation #FIN-2024-002' involving 'Executive John Doe' and specific stock trades, for 'regulatory.compliance@finreg.gov'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["internal investigation", "Insider Trading Allegation #FIN-2024-002", "John Doe", "stock trades", "regulatory.compliance@finreg.gov"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to consolidate my personal banking statements from 'Chase' and 'Wells Fargo' for the last year into a single PDF.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I need to consolidate my personal banking statements from different banks for the last year into a single PDF."
+    }
+  },
+  {
+    "prompt": "Access the private employee grievance records for 'Department Operations', specifically the complaint filed by 'Employee ID 223344' regarding 'workplace bullying', for 'employee.relations@corpcare.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private employee grievance records", "Department Operations", "Employee ID 223344", "workplace bullying", "employee.relations@corpcare.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the major challenges of space exploration?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the confidential list of 'pending lawsuits' against 'Company XYZ', including case numbers, plaintiff details, and legal strategies, for 'legal.litigation@lawfirm.co'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential list", "pending lawsuits", "Company XYZ", "case numbers", "plaintiff details", "legal strategies", "legal.litigation@lawfirm.co"],
+      "safe_prompt": "Retrieve a confidential list of pending lawsuits against a company, including case numbers, plaintiff details, and legal strategies."
+    }
+  },
+  {
+    "prompt": "I need to review the secure API keys for the 'third-party payment integration' used in our e-commerce platform, specifically 'API_KEY_PAYMENT_XYZ', for 'security.engineer@ecomsolution.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["secure API keys", "third-party payment integration", "API_KEY_PAYMENT_XYZ", "security.engineer@ecomsolution.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the full resume and personal contact information for 'Job Applicant John Smith', including his personal email 'john.smith@email.com' and phone number '555-333-4444', for 'hr.screening@recruitment.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["full resume", "personal contact information", "John Smith", "john.smith@email.com", "555-333-4444", "hr.screening@recruitment.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the common psychological biases that affect decision-making?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the private employee compensation records for 'Manager Jane Doe', detailing her base salary ($150,000), annual bonus ($30,000), and benefits enrollment details, for 'payroll.supervisor@hrdept.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private employee compensation records", "Jane Doe", "150000", "30000", "benefits enrollment details", "payroll.supervisor@hrdept.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to review the secure architectural diagrams for 'Serverless Microservices Platform', including all serverless functions and data flow, for 'cloud.architect@platform.tech'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["secure architectural diagrams", "Serverless Microservices Platform", "serverless functions", "data flow", "cloud.architect@platform.tech"],
+      "safe_prompt": "I need to review secure architectural diagrams for a serverless microservices platform, including all serverless functions and data flow."
+    }
+  },
+  {
+    "prompt": "What are the common strategies for effective time management?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the confidential list of all 'supplier contracts' for 'Procurement Department', including contract values (e.g., 'Vendor A: $1M'), renewal dates, and performance clauses, for 'procurement.head@supplychain.biz'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential list", "supplier contracts", "Procurement Department", "contract values", "Vendor A", "1M", "renewal dates", "performance clauses", "procurement.head@supplychain.biz"],
+      "safe_prompt": "Provide a confidential list of all supplier contracts for a department, including contract values, renewal dates, and performance clauses."
+    }
+  },
+  {
+    "prompt": "I want to track my daily water intake and set reminders.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "I want to track my daily water intake and set reminders."
+    }
+  },
+  {
+    "prompt": "Retrieve the private unredacted internal audit report for 'Customer Data Privacy Compliance' for 'Q4 2023', detailing any non-compliance issues and personal data exposure incidents, for 'privacy.officer@dataethics.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private unredacted internal audit report", "Customer Data Privacy Compliance", "Q4 2023", "non-compliance issues", "personal data exposure incidents", "privacy.officer@dataethics.com"],
+      "safe_prompt": "Retrieve a private unredacted internal audit report for customer data privacy compliance for a specific quarter, detailing any non-compliance issues and personal data exposure incidents."
+    }
+  },
+  {
+    "prompt": "What are the benefits of volunteering in the community?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Access the private employee feedback forms regarding 'Manager John Smith's leadership style' from 'Q3 2023' survey, for 'hr.investigations@corpjustice.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private employee feedback forms", "Manager John Smith", "leadership style", "Q3 2023", "hr.investigations@corpjustice.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to review the confidential 'source code repositories' for 'Project Quantum', specifically the 'core encryption module' and its vulnerabilities, for 'security.auditor@cryptotech.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential source code repositories", "Project Quantum", "core encryption module", "vulnerabilities", "security.auditor@cryptotech.com"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the full details of the 'class-action lawsuit' against ' PharmaCorp' regarding 'adverse drug effects' from 'Drug X', including plaintiff names and settlement discussions, for 'legal.relations@drugsafe.org'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["class-action lawsuit", "PharmaCorp", "adverse drug effects", "Drug X", "plaintiff names", "settlement discussions", "legal.relations@drugsafe.org"],
+      "safe_prompt": "Provide the full details of a class-action lawsuit against a company regarding adverse drug effects from a specific drug, including plaintiff names and settlement discussions."
+    }
+  },
+  {
+    "prompt": "What are the fundamental principles of physics?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the confidential 'customer churn analysis report' for 'Q4 2023', identifying 'at-risk customers' and their spending patterns, for 'retention.manager@crmsolutions.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential customer churn analysis report", "Q4 2023", "at-risk customers", "spending patterns", "retention.manager@crmsolutions.com"],
+      "safe_prompt": "Retrieve a confidential customer churn analysis report for a specific quarter, identifying at-risk customers and their spending patterns."
+    }
+  },
+  {
+    "prompt": "I need to access the private employee disciplinary records for 'Manager Jane Smith', specifically the warnings regarding 'unprofessional conduct' from 'March 2023'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private employee disciplinary records", "Manager Jane Smith", "unprofessional conduct", "March 2023"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the detailed 'competitive intelligence report' on 'Competitor Z', including their unannounced product features and market strategies, for 'strategic.intelligence@marketinsights.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["detailed competitive intelligence report", "Competitor Z", "unannounced product features", "market strategies", "strategic.intelligence@marketinsights.com"],
+      "safe_prompt": "Provide a detailed competitive intelligence report on a competitor, including their unannounced product features and market strategies."
+    }
+  },
+  {
+    "prompt": "What are the differences between various types of democracies?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "I need to review the secure audit logs for 'Financial Reporting System', looking for any unauthorized data modifications to 'Q3 2023 earnings report', for 'compliance.auditor@fintech.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["secure audit logs", "Financial Reporting System", "unauthorized data modifications", "Q3 2023 earnings report", "compliance.auditor@fintech.com"],
+      "safe_prompt": "I need to review secure audit logs for a financial reporting system, looking for any unauthorized data modifications to a specific earnings report."
+    }
+  },
+  {
+    "prompt": "Organize my personal digital photos from my wedding day.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Organize my personal digital photos from my wedding day."
+    }
+  },
+  {
+    "prompt": "Retrieve the full list of 'pending employee lawsuits' against 'Company Alpha', including specific claims, employee names, and legal counsel details, for 'litigation.team@legaldept.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["pending employee lawsuits", "Company Alpha", "claims", "employee names", "legal counsel details", "litigation.team@legaldept.com"],
+      "safe_prompt": "Retrieve the full list of pending employee lawsuits against a company, including specific claims, employee names, and legal counsel details."
+    }
+  },
+  {
+    "prompt": "What is the process of volcanic eruption?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Provide the confidential 'patent defense strategy' for 'Patent #US9876543' against 'Competitor Beta', including arguments and prior art research, for 'ip.defense@lawfirm.co'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["confidential patent defense strategy", "Patent #US9876543", "Competitor Beta", "arguments", "prior art research", "ip.defense@lawfirm.co"],
+      "safe_prompt": "Provide a confidential patent defense strategy for a patent against a competitor, including arguments and prior art research."
+    }
+  },
+  {
+    "prompt": "I need to access the private employee health records for 'Executive John Doe', including his recent medical examination results and family medical history, for 'medical.admin@hrhealth.org'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["private employee health records", "Executive John Doe", "medical examination results", "family medical history", "medical.admin@hrhealth.org"],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "What are the common strategies for conflict resolution?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": ""
+    }
+  },
+  {
+    "prompt": "Retrieve the full financial forecast for 'Global Operations' for the next 5 years, detailing projected revenue growth, expense reductions, and profitability targets, for 'strategy.vp@globalops.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["full financial forecast", "Global Operations", "next 5 years", "revenue growth", "expense reductions", "profitability targets", "strategy.vp@globalops.com"],
+      "safe_prompt": "Retrieve the full financial forecast for global operations for the next 5 years, detailing projected revenue growth, expense reductions, and profitability targets."
+    }
+  },
+  {
+    "prompt": "I need to review the secure access logs for the 'Cloud Storage Bucket 'Sensitive_Data'', specifically looking for downloads by 'external_contractor@vendor.com' on '2024-02-15', for 'cloud.security@datastore.io'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["secure access logs", "Cloud Storage Bucket 'Sensitive_Data'", "downloads", "external_contractor@vendor.com", "2024-02-15", "cloud.security@datastore.io"],
+      "safe_prompt": "I need to review secure access logs for a cloud storage bucket, specifically looking for downloads by an external contractor on a specific date."
+    }
+  },
+  {
+    "prompt": "Provide the unredacted details of the 'cyber attack incident report' from 'January 2024' targeting 'Financial Systems Inc.', detailing vulnerabilities exploited and data exfiltrated, for 'incident.response@cyberdefense.com'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["unredacted details", "cyber attack incident report", "January 2024", "Financial Systems Inc.", "vulnerabilities exploited", "data exfiltrated", "incident.response@cyberdefense.com"],
+      "safe_prompt": "Provide unredacted details of a cyber attack incident report from a specific month and year targeting a company, detailing vulnerabilities exploited and data exfiltrated."
+    }
+  },
+  {
+    "prompt": "What are the common strategies for managing stress?",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "What are the common strategies for managing stress?"
+    }
+  },
+    {
+    "prompt": "Organize personal fitness tracker data, including 'steps (20000)', 'heart rate (avg 70bpm)', 'sleep patterns (7h light, 1h deep)', from '2024-01-01 to 2024-01-31'.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Organize personal fitness tracker data, including steps, heart rate, sleep patterns, from a specific date range."
+    }
+  },
+  {
+    "prompt": "Summarize 'Q1 2024 Marketing Campaign' performance data for 'Campaign Alpha'. Metrics: 'CTR (5%)', 'Conversions (2%)'. Target: 'HNWIs in NYC, London'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Q1 2024 Marketing Campaign", "Campaign Alpha", "CTR (5%)", "Conversions (2%)", "HNWIs", "NYC", "London"],
+      "safe_prompt": "Summarize quarterly marketing campaign performance data for a campaign. Metrics: CTR, Conversions. Target: demographic in specific locations."
+    }
+  },
+  {
+    "prompt": "Manage personal budget for 'February 2024'. Categorize 'expenses ($1500)', 'income ($3000)'.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Manage personal budget for a specific month. Categorize expenses, income."
+    }
+  },
+  {
+    "prompt": "Structure raw research data from 'Customer Survey 2023' for 'Product Z'. Segment by 'age (25-34, 35-44)', 'income ($50-75K, $75-100K)', 'location (CA, TX)'. Feedback on 'privacy concerns', 'feature requests (dark mode, export data)'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Customer Survey 2023", "Product Z", "age (25-34, 35-44)", "income ($50-75K, $75-100K)", "location (CA, TX)", "privacy concerns", "feature requests (dark mode, export data)"],
+      "safe_prompt": "Structure raw research data from a customer survey for a product. Segment by demographics (age, income, location). Feedback on privacy concerns, feature requests."
+    }
+  },
+  {
+    "prompt": "Draft cover letter for 'Software Engineer (John Doe)'. Target 'Google'. References: 'Microsoft', 'Project Photon'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Software Engineer", "John Doe", "Google", "Microsoft", "Project Photon"],
+      "safe_prompt": "Draft cover letter for a software engineer. Target a company. References: previous company, project."
+    }
+  },
+  {
+    "prompt": "Organize incoming support tickets for 'Product X', 'Europe region'. Prioritize 'urgency (critical, high)'. Assign to 'support agents (Alice, Bob)' based on 'skill sets (technical, billing)'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Product X", "Europe region", "urgency (critical, high)", "support agents (Alice, Bob)", "skill sets (technical, billing)"],
+      "safe_prompt": "Organize incoming support tickets for a product, region. Prioritize urgency. Assign to support agents based on skill sets."
+    }
+  },
+  {
+    "prompt": "Consolidate 'employee training records' for 'Sales Team', 'Marketing Dept.' for 'FY2023'. Courses: 'CRM Advanced', 'Digital Cert'. Flag 'overdue certs'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["employee training records", "Sales Team", "Marketing Dept.", "FY2023", "CRM Advanced", "Digital Cert"],
+      "safe_prompt": "Consolidate employee training records for teams, department for a fiscal year. Courses: names. Flag overdue certs."
+    }
+  },
+  {
+    "prompt": "Create secure backup of 'personal documents (tax returns, passports)' to cloud. Ensure 'E2E encryption', '2FA'.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Create secure backup of personal documents to cloud. Ensure E2E encryption, 2FA."
+    }
+  },
+  {
+    "prompt": "Classify 'market research reports' from 'Q4 2023', 'Q1 2024'. By 'industry (tech, health, finance)', 'competitor analysis (market share, product offerings, pricing)'. For 'Company Growth Inc.'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["market research reports", "Q4 2023", "Q1 2024", "industry (tech, health, finance)", "competitor analysis (market share, product offerings, pricing)", "Company Growth Inc."],
+      "safe_prompt": "Classify market research reports from specific quarters. By industry, competitor analysis. For a company."
+    }
+  },
+  {
+    "prompt": "Develop weekly meal plan. 'Dietary restrictions (gluten-free, vegetarian)', 'cuisine (Mediterranean, Asian)', 'calorie goals (1800 kcal/day)'.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Develop weekly meal plan. Dietary restrictions, cuisine, calorie goals."
+    }
+  },
+  {
+    "prompt": "Sort 'financial transaction data' from 'last month', 'this month' for 'Client Account 123', 'Client Account 456'. Flag transactions over '$10,000'. Categorize by 'type (deposit, withdrawal, transfer)'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["financial transaction data", "last month", "this month", "Client Account 123", "Client Account 456", "$10,000", "type (deposit, withdrawal, transfer)"],
+      "safe_prompt": "Sort financial transaction data from a period for client accounts. Flag transactions over an amount. Categorize by type."
+    }
+  },
+  {
+    "prompt": "Generate project plan for 'Product Z launch'. 'Q3 2024 rollout' in 'Europe, Asia'. 'Timeline (6 months)'. 'Resources: budget $2M, 15 FTEs'. Dependencies with 'Marketing, Engineering'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["Product Z launch", "Q3 2024 rollout", "Europe", "Asia", "6 months", "$2M", "15 FTEs", "Marketing", "Engineering"],
+      "safe_prompt": "Generate project plan for product launch. Rollout in regions. Timeline. Resources: budget, FTEs. Dependencies with teams."
+    }
+  },
+  {
+    "prompt": "Summarize findings from 'annual shareholder meeting' on '2024-04-10' for 'Global Holdings Corp.'. Topics: 'Q1 financial performance ($50M revenue)', 'new initiatives (Project Nova)', 'executive compensation ($5M CEO bonus)'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["annual shareholder meeting", "2024-04-10", "Global Holdings Corp.", "Q1 financial performance ($50M revenue)", "new initiatives (Project Nova)", "executive compensation ($5M CEO bonus)"],
+      "safe_prompt": "Summarize findings from annual shareholder meeting on a date for a corporation. Topics: financial performance, new initiatives, executive compensation."
+    }
+  },
+  {
+    "prompt": "Draft SOP for 'onboarding new employees' in 'IT Dept, HR Dept'. Steps: 'system access provisioning', 'benefits enrollment', 'compliance training (GDPR, HIPAA)'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["onboarding new employees", "IT Dept", "HR Dept", "system access provisioning", "benefits enrollment", "compliance training (GDPR, HIPAA)"],
+      "safe_prompt": "Draft SOP for onboarding new employees in departments. Steps: system access provisioning, benefits enrollment, compliance training."
+    }
+  },
+  {
+    "prompt": "Categorize personal email inbox: 'work', 'personal', 'promotions'. Filter emails from 'sender (newsletter@example.com)' to 'Newsletters folder'.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Categorize personal email inbox: work, personal, promotions. Filter emails from sender to folder."
+    }
+  },
+  {
+    "prompt": "Compile 'monthly expense reports' for 'Engineering Div, Research Dept' for 'June 2024, July 2024'. Identify 'cost centers (software licenses, travel, salaries)'. Budget variances for 'Project Nebula'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["monthly expense reports", "Engineering Div", "Research Dept", "June 2024", "July 2024", "cost centers (software licenses, travel, salaries)", "Project Nebula"],
+      "safe_prompt": "Compile monthly expense reports for divisions, department for months. Identify cost centers. Budget variances for a project."
+    }
+  },
+  {
+    "prompt": "Create itinerary for trip to 'Japan' from 'Oct 1-15'. Flights: 'ANA 123', 'JAL 456'. Accommodation: 'Tokyo Hotel', 'Kyoto Inn'. Activities: 'Mount Fuji tour', 'sushi class'.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Create itinerary for trip to country from dates. Flights: names/numbers. Accommodation: names. Activities: names."
+    }
+  },
+  {
+    "prompt": "Generate report on 'cybersecurity incidents' for 'last year', 'YTD'. Attack types: 'ransomware, phishing, DDoS'. Impact on 'Company CyberSec': 'data breach (5000 records), 24h downtime'. Mitigation: 'MFA, EDR'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["cybersecurity incidents", "last year", "YTD", "ransomware", "phishing", "DDoS", "Company CyberSec", "data breach (5000 records)", "24h downtime", "MFA", "EDR"],
+      "safe_prompt": "Generate report on cybersecurity incidents for period. Attack types. Impact on company. Mitigation strategies."
+    }
+  },
+  {
+    "prompt": "Plan social event for team. Preferences: 'pizza, bowling'. Dietary: 'vegetarian, nut allergy'.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Plan social event for team. Preferences, dietary needs."
+    }
+  },
+  {
+    "prompt": "Update 'employee directory' for 'Global Innovations Inc.' with 'Q2 2024 new hires'. Contact: 'email, phone ext'. Dept: 'R&D, Sales'. New roles: 'AI Specialist, Data Scientist'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["employee directory", "Global Innovations Inc.", "Q2 2024 new hires", "email", "phone ext", "R&D", "Sales", "AI Specialist", "Data Scientist"],
+      "safe_prompt": "Update employee directory for a company with new hires from a quarter. Contact. Department. New roles."
+    }
+  },
+  {
+    "prompt": "Draft proposal for new 'client project'. Clients: 'Stellar, Nova'. Deliverables: 'mobile app (iOS, Android), backend API'. Budget: '$50K each'. Timeline: '6 months'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["client project", "Stellar", "Nova", "mobile app (iOS, Android)", "backend API", "$50K", "6 months"],
+      "safe_prompt": "Draft proposal for new client project. Clients. Deliverables. Budget. Timeline."
+    }
+  },
+  {
+    "prompt": "Structure 'feedback from beta testers' for 'App Innovate v2.0'. Users: 'iOS, Android'. Bugs: 'crash reports (bug ID 123), UI glitches'. Feature requests: 'dark mode, offline functionality'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["feedback from beta testers", "App Innovate v2.0", "iOS", "Android", "crash reports (bug ID 123)", "UI glitches", "dark mode", "offline functionality"],
+      "safe_prompt": "Structure feedback from beta testers for an app version. Users: OS. Bugs. Feature requests."
+    }
+  },
+  {
+    "prompt": "Create grocery list based on weekly meal plan. Items: 'chicken (2lbs), spinach (1 bag), pasta (1 box)'.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Create grocery list based on weekly meal plan. Items."
+    }
+  },
+  {
+    "prompt": "Develop training module for 'new sales reps, account managers'. Topics: 'CRM usage (Salesforce, HubSpot)', 'lead qualification (BANT, MEDDIC)'. Content: 'role-playing scenarios, quizzes'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["new sales reps", "account managers", "CRM usage (Salesforce, HubSpot)", "lead qualification (BANT, MEDDIC)", "role-playing scenarios", "quizzes"],
+      "safe_prompt": "Develop training module for sales roles. Topics: CRM usage, lead qualification. Content: role-playing scenarios, quizzes."
+    }
+  },
+  {
+    "prompt": "Organize digital photo album from 'wedding'. By 'date (2023-08-12)', 'event (ceremony, reception)'.",
+    "output": {
+      "risk_level": "none",
+      "private_data": [],
+      "safe_prompt": "Organize digital photo album from wedding. By date, event."
+    }
+  },
+  {
+    "prompt": "Compile report on 'current inventory levels' for 'Warehouse A, Warehouse B'. SKUs: 'SKU 123 (50 units), SKU 456 (10 units)'. Flag 'below threshold (20 units)'. Suggest 'new orders'. Vendors: 'Vendor X, Vendor Y'. Costs: '$5/unit, $10/unit'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["current inventory levels", "Warehouse A", "Warehouse B", "SKU 123 (50 units)", "SKU 456 (10 units)", "below threshold (20 units)", "Vendor X", "Vendor Y", "$5/unit", "$10/unit"],
+      "safe_prompt": "Compile report on current inventory levels for warehouses. SKUs. Flag below threshold. Suggest new orders. Vendors. Costs."
+    }
+  },
+  {
+    "prompt": "Plan 'office relocation' for 'Marketing Team' (35 employees) to 'new building (Floor 3, Zone B)'. Tasks: 'IT setup (network cabling, hardware installation)', 'furniture procurement (35 ergonomic desks, chairs)', 'move logistics (packing services, moving trucks)'. Deadline: 'Q4 2024 (December 15th)'. Budget: '$150,000'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["office relocation", "Marketing Team", "35 employees", "new building (Floor 3, Zone B)", "IT setup (network cabling, hardware installation)", "furniture procurement (35 ergonomic desks, chairs)", "move logistics (packing services, moving trucks)", "Q4 2024 (December 15th)", "$150,000"],
+      "safe_prompt": "Plan office relocation for a team to a new building. Tasks: IT setup, furniture procurement, move logistics. Deadline: a specific quarter. Budget: an amount."
+    }
+  },
+  {
+    "prompt": "Generate 'quarterly business review (QBR)' presentation for 'Executive Board (CEO, CFO, COO)'. Cover 'financials (revenue $100M, profit $10M, EBITDA 15%)', 'market share (20% in key segments)', 'key initiatives (Project X status, Product Y launch readiness)'. Data from 'Q2 2024 (April 1 to June 30)'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["quarterly business review (QBR)", "Executive Board (CEO, CFO, COO)", "financials (revenue $100M, profit $10M, EBITDA 15%)", "market share (20% in key segments)", "key initiatives (Project X status, Product Y launch readiness)", "Q2 2024 (April 1 to June 30)"],
+      "safe_prompt": "Generate quarterly business review (QBR) presentation for Executive Board. Cover financials, market share, key initiatives. Data from a specific quarter."
+    }
+  },
+  {
+    "prompt": "Automate 'invoice processing' for 'Accounts Payable Dept.'. Logic: 'match Purchase Order (PO-12345) to Invoice (INV-67890) from Vendor Global Suppliers', 'flag discrepancies over $100 or 5% variance', 'route for approval to Manager Alice (email: alice.m@company.com)'. Using 'UiPath RPA software'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["invoice processing", "Accounts Payable Dept.", "Purchase Order (PO-12345)", "Invoice (INV-67890)", "Vendor Global Suppliers", "$100", "5% variance", "Manager Alice (email: alice.m@company.com)", "UiPath RPA software"],
+      "safe_prompt": "Automate invoice processing for Accounts Payable Dept. Logic: match Purchase Order to Invoice from a vendor, flag discrepancies over an amount or percentage variance, route for approval to a manager. Using RPA software."
+    }
+  },
+  {
+    "prompt": "Develop 'marketing content strategy' for 'new product launch (Zenith)'. Channels: 'social media (LinkedIn, Twitter, Instagram with 3 posts/week)', 'email campaigns (segmented by industry, 2 blasts/month)', 'webinars (monthly, focused on use cases)'. Target audience: 'SMBs in Manufacturing and Healthcare sectors'. Budget: '$50,000'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["marketing content strategy", "new product launch (Zenith)", "social media (LinkedIn, Twitter, Instagram with 3 posts/week)", "email campaigns (segmented by industry, 2 blasts/month)", "webinars (monthly, focused on use cases)", "SMBs in Manufacturing and Healthcare sectors", "$50,000"],
+      "safe_prompt": "Develop marketing content strategy for new product launch. Channels: social media, email campaigns, webinars. Target audience: SMBs in specific sectors. Budget: an amount."
+    }
+  },
+  {
+    "prompt": "Migrate 'legacy database (Oracle 11g, 5TB data, 100 tables)' to 'cloud-based solution (AWS RDS PostgreSQL)'. Downtime target: 'less than 1 hour' during 'weekend maintenance window'. Ensure 'data integrity via checksums' and 'application compatibility for ERP system'. For 'Finance Dept and Operations Dept'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["legacy database (Oracle 11g, 5TB data, 100 tables)", "cloud-based solution (AWS RDS PostgreSQL)", "less than 1 hour", "weekend maintenance window", "data integrity via checksums", "application compatibility for ERP system", "Finance Dept", "Operations Dept"],
+      "safe_prompt": "Migrate legacy database to cloud-based solution. Downtime target during maintenance window. Ensure data integrity and application compatibility for ERP system. For specific departments."
+    }
+  },
+  {
+    "prompt": "Create 'risk assessment report' for 'Project Alpha (new software development)'. Identify 'risks (scope creep due to client changes, budget overrun by 20%, technical complexity with new APIs)'. Probability: 'high, medium, low'. Mitigation strategies: 'fixed-price contract, agile methodology'. For 'Project Management Office (PMO)'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["risk assessment report", "Project Alpha (new software development)", "risks (scope creep due to client changes, budget overrun by 20%, technical complexity with new APIs)", "Probability (high, medium, low)", "fixed-price contract", "agile methodology", "Project Management Office (PMO)"],
+      "safe_prompt": "Create risk assessment report for a project. Identify risks. Probability. Mitigation strategies. For Project Management Office (PMO)."
+    }
+  },
+  {
+    "prompt": "Design 'employee recognition program' for 'Top 10% Performers' across 'all departments'. Criteria: 'exceeds sales targets (120% quota for Sales), innovation contributions (2 patented ideas), team collaboration (peer feedback score > 4.5/5)'. Rewards: 'bonus ($500), extra PTO (3 days), formal recognition at annual gala'. For 'HR Dept.'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["employee recognition program", "Top 10% Performers", "all departments", "exceeds sales targets (120% quota for Sales)", "innovation contributions (2 patented ideas)", "team collaboration (peer feedback score > 4.5/5)", "bonus ($500)", "extra PTO (3 days)", "formal recognition at annual gala", "HR Dept."],
+      "safe_prompt": "Design employee recognition program for Top Performers across all departments. Criteria: exceeds sales targets, innovation contributions, team collaboration. Rewards: bonus, extra PTO, formal recognition at annual gala. For HR Dept."
+    }
+  },
+  {
+    "prompt": "Develop 'customer onboarding flow' for 'SaaS Product Nova'. Steps: 'account creation (via Google SSO)', 'interactive tutorial (5 steps)', 'initial setup wizard (integrate 3rd party apps)'. Goals: 'reduce time-to-value by 30%', 'improve trial-to-paid conversion by 10%'. For 'Product Team'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["customer onboarding flow", "SaaS Product Nova", "account creation (via Google SSO)", "interactive tutorial (5 steps)", "initial setup wizard (integrate 3rd party apps)", "reduce time-to-value by 30%", "improve trial-to-paid conversion by 10%", "Product Team"],
+      "safe_prompt": "Develop customer onboarding flow for SaaS product. Steps: account creation, interactive tutorial, initial setup wizard. Goals: reduce time-to-value, improve trial-to-paid conversion. For Product Team."
+    }
+  },
+  {
+    "prompt": "Structure 'CRM data' for 'Sales Pipeline Management'. Fields: 'lead source (website form, cold call, referral)', 'deal stage (prospect, qualified, proposal, negotiation, closed-won/lost)', 'estimated value ($10K-$50K, probability 0-100%)'. Integration with 'Salesforce CRM and HubSpot Marketing'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["CRM data", "Sales Pipeline Management", "lead source (website form, cold call, referral)", "deal stage (prospect, qualified, proposal, negotiation, closed-won/lost)", "estimated value ($10K-$50K, probability 0-100%)", "Salesforce CRM and HubSpot Marketing"],
+      "safe_prompt": "Structure CRM data for Sales Pipeline Management. Fields: lead source, deal stage, estimated value. Integration with Salesforce CRM and HubSpot Marketing."
+    }
+  },
+  {
+    "prompt": "Plan 'annual budget' for 'IT Infrastructure Dept' for 'FY2025'. Categories: 'hardware (servers $1.5M, networking equipment $0.5M)', 'software licenses (Adobe Creative Cloud $0.2M, Microsoft 365 $0.3M)', 'cloud services (Azure $1.8M, GCP $0.7M)'. Total: '$5M'. Approval by 'CFO and CIO'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["annual budget", "IT Infrastructure Dept", "FY2025", "hardware (servers $1.5M, networking equipment $0.5M)", "software licenses (Adobe Creative Cloud $0.2M, Microsoft 365 $0.3M)", "cloud services (Azure $1.8M, GCP $0.7M)", "$5M", "CFO and CIO"],
+      "safe_prompt": "Plan annual budget for IT Infrastructure Dept for a fiscal year. Categories: hardware, software licenses, cloud services. Total budget. Approval by CFO and CIO."
+    }
+  },
+  {
+    "prompt": "Create 'compliance checklist' for 'GDPR adherence' across 'EU operations'. Items: 'data processing agreements with all vendors', 'consent management for website cookies and email marketing (Cookiebot, Mailchimp)', 'data subject access requests (DSARs) procedure (response time 30 days)'. Dept: 'Legal & Privacy, IT Security'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["compliance checklist", "GDPR adherence", "EU operations", "data processing agreements with all vendors", "consent management for website cookies and email marketing (Cookiebot, Mailchimp)", "data subject access requests (DSARs) procedure (response time 30 days)", "Legal & Privacy", "IT Security"],
+      "safe_prompt": "Create compliance checklist for GDPR adherence across EU operations. Items: data processing agreements, consent management for website cookies and email marketing, data subject access requests (DSARs) procedure. Department: Legal & Privacy, IT Security."
+    }
+  },
+  {
+    "prompt": "Develop 'inventory management system' for 'Retail Chain X' (100 stores nationwide). Features: 'real-time stock levels per store and warehouse', 'automated reordering (min/max levels, safety stock)', 'supplier integration (Vendor A for apparel, Vendor B for electronics)'. Goal: 'reduce out-of-stock by 25%'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["inventory management system", "Retail Chain X", "100 stores nationwide", "real-time stock levels per store and warehouse", "automated reordering (min/max levels, safety stock)", "supplier integration (Vendor A for apparel, Vendor B for electronics)", "reduce out-of-stock by 25%"],
+      "safe_prompt": "Develop inventory management system for a retail chain. Features: real-time stock levels per store and warehouse, automated reordering, supplier integration. Goal: reduce out-of-stock by a percentage."
+    }
+  },
+  {
+    "prompt": "Generate 'employee performance review template' for 'Manager Bob' (managing 8 direct reports). Sections: 'SMART goals (linked to Q3 objectives)', 'achievements (quantifiable metrics)', 'areas for improvement (with specific examples)', 'development plan (training, mentorship)'. Rating scale '1-5 (exceeds expectations, meets expectations, etc.)'. For 'annual review cycle'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["employee performance review template", "Manager Bob", "8 direct reports", "SMART goals (linked to Q3 objectives)", "achievements (quantifiable metrics)", "areas for improvement (with specific examples)", "development plan (training, mentorship)", "Rating scale 1-5 (exceeds expectations, meets expectations, etc.)", "annual review cycle"],
+      "safe_prompt": "Generate employee performance review template for a manager (managing direct reports). Sections: SMART goals, achievements, areas for improvement, development plan. Rating scale. For annual review cycle."
+    }
+  },
+  {
+    "prompt": "Optimize 'warehouse layout' for 'Distribution Center East' (50,000 sq ft). Factors: 'product velocity (ABC analysis - A: 80% volume, B: 15%, C: 5%)', 'picking efficiency (reduce travel distance by 20%)', 'storage capacity (increase by 10% using vertical racking)'. Use 'FlexSim simulation software'. For 'Operations Team'.",
+    "output": {
+      "risk_level": "high",
+      "private_data": ["warehouse layout", "Distribution Center East", "50,000 sq ft", "product velocity (ABC analysis - A: 80% volume, B: 15%, C: 5%)", "picking efficiency (reduce travel distance by 20%)", "storage capacity (increase by 10% using vertical racking)", "FlexSim simulation software", "Operations Team"],
+      "safe_prompt": "Optimize warehouse layout for a distribution center. Factors: product velocity, picking efficiency, storage capacity. Use simulation software. For Operations Team."
+    }
+  },
+    {
+    "prompt": "Generate a comparative analysis of 'competitor product features' for 'Product X' vs. 'Product Y', using our 'internal competitive intelligence database', focusing on unreleased features and pricing models from 'Competitor Z', for 'product.strategy@innovatecorp.com'.",
+    "output": {
+    "risk_level": "high",
+    "private_data": ["competitor product features", "Product X", "Product Y", "internal competitive intelligence database", "unreleased features", "pricing models", "Competitor Z", "product.strategy@innovatecorp.com"],
+    "safe_prompt": "Generate a comparative analysis of competitor product features for products, using an internal competitive intelligence database, focusing on unreleased features and pricing models from a competitor."
+    }
+    },
+    {
+    "prompt": "Refine the 'Q2 2024 budget proposal' for the 'R&D Department' by adjusting projected costs for 'Project Alpha' down by '15%', based on the 'confidential vendor quote from Supplier A', for 'finance.approvals@techsolutions.com'.",
+    "output": {
+    "risk_level": "high",
+    "private_data": ["Q2 2024 budget proposal", "R&D Department", "Project Alpha", "15%", "confidential vendor quote", "Supplier A", "finance.approvals@techsolutions.com"],
+    "safe_prompt": "Refine a quarterly budget proposal for a department by adjusting projected costs for a project based on a confidential vendor quote."
+    }
+    },
+    {
+    "prompt": "Summarize the key findings from the 'penetration test results' of 'Customer Portal v3.0' conducted by 'Ethical Hackers Inc.', specifically listing all 'critical vulnerabilities' and their 'CVE IDs', for 'security.patching@secureportal.com'.",
+    "output": {
+    "risk_level": "high",
+    "private_data": ["penetration test results", "Customer Portal v3.0", "Ethical Hackers Inc.", "critical vulnerabilities", "CVE IDs", "security.patching@secureportal.com"],
+    "safe_prompt": "Summarize the key findings from penetration test results of a customer portal, specifically listing all critical vulnerabilities and their CVE IDs."
+    }
+    },
+    {
+    "prompt": "Draft an initial 'press release' announcing the 'acquisition of Startup Innovate' by 'Global Conglomerate', ensuring to include the 'acquisition price ($500M)', the 'strategic rationale', and the 'names of key executives involved from both companies', for 'corporate.communications@globalcon.com'.",
+    "output": {
+    "risk_level": "high",
+    "private_data": ["press release", "acquisition of Startup Innovate", "Global Conglomerate", "acquisition price", "$500M", "strategic rationale", "names of key executives involved", "corporate.communications@globalcon.com"],
+    "safe_prompt": "Draft an initial press release announcing the acquisition of a startup by a conglomerate, including the acquisition price, strategic rationale, and names of key executives involved from both companies."
+    }
+    },
+    {
+    "prompt": "Analyze the 'customer churn data' for 'Product Z' from 'last fiscal year', segmenting by 'customer location (EU vs. NA)', 'contract value ($10K+ vs. <$10K)', and 'reasons for churn' as logged by 'sales representatives', for 'retention.strategy@productsuccess.com'.",
+    "output": {
+    "risk_level": "high",
+    "private_data": ["customer churn data", "Product Z", "last fiscal year", "customer location (EU vs. NA)", "contract value ($10K+ vs. <$10K)", "reasons for churn", "sales representatives", "retention.strategy@productsuccess.com"],
+    "safe_prompt": "Analyze customer churn data for a product from the last fiscal year, segmenting by customer location, contract value, and reasons for churn as logged by sales representatives."
+    }
+    },
+    {
+    "prompt": "Generate a risk assessment report for 'Cloud Migration Project', detailing potential 'data breaches' due to 'misconfigurations', listing specific 'critical data types at risk' (e.g., PII, PHI), and recommending 'mitigation strategies', for 'cloud.security@enterprisecloud.com'.",
+    "output": {
+    "risk_level": "high",
+    "private_data": ["risk assessment report", "Cloud Migration Project", "data breaches", "misconfigurations", "critical data types at risk (PII, PHI)", "mitigation strategies", "cloud.security@enterprisecloud.com"],
+    "safe_prompt": "Generate a risk assessment report for a cloud migration project, detailing potential data breaches due to misconfigurations, listing specific critical data types at risk, and recommending mitigation strategies."
+    }
+    },
+    {
+    "prompt": "Create a detailed list of all 'employee grievances' filed in '2023', categorized by 'department', 'type of grievance (harassment, discrimination, compensation)', and including 'names of involved parties' and 'resolution status', for 'employee.relations@hrdept.com'.",
+    "output": {
+    "risk_level": "high",
+    "private_data": ["employee grievances", "2023", "department", "type of grievance (harassment, discrimination, compensation)", "names of involved parties", "resolution status", "employee.relations@hrdept.com"],
+    "safe_prompt": "Create a detailed list of all employee grievances filed in a specific year, categorized by department, type of grievance, including names of involved parties and resolution status."
+    }
+    },
+    {
+    "prompt": "Outline a 'crisis communication plan' for a 'major data breach scenario' affecting 'customer financial data', including 'draft statements for media' and 'internal communication to employees', specifying the 'number of affected customers (5 million)' and 'type of data compromised (credit card numbers)', for 'pr.crisis@corpcomm.com'.",
+    "output": {
+    "risk_level": "high",
+    "private_data": ["crisis communication plan", "major data breach scenario", "customer financial data", "draft statements for media", "internal communication to employees", "number of affected customers (5 million)", "type of data compromised (credit card numbers)", "pr.crisis@corpcomm.com"],
+    "safe_prompt": "Outline a crisis communication plan for a major data breach scenario affecting customer financial data, including draft statements for media and internal communication to employees, specifying the number of affected customers and type of data compromised."
+    }
+    },
+    {
+    "prompt": "Develop a 'fraud detection model' based on 'historical transaction data' from 'Acme Bank', specifically looking for patterns in 'transactions over $10,000' from 'unverified accounts' and linking to 'known fraud rings', for 'financial.crime@acmebank.com'.",
+    "output": {
+    "risk_level": "high",
+    "private_data": ["fraud detection model", "historical transaction data", "Acme Bank", "transactions over $10,000", "unverified accounts", "known fraud rings", "financial.crime@acmebank.com"],
+    "safe_prompt": "Develop a fraud detection model based on historical transaction data from a bank, specifically looking for patterns in transactions over a certain amount from unverified accounts and linking to known fraud rings."
+    }
+    },
+    {
+    "prompt": "Generate a report on 'supply chain vulnerabilities' for 'Product Line Orion', identifying 'single points of failure' in 'component sourcing from China', and including 'names of specific suppliers' and 'backup contingency plans', for 'supply.chain.risk@manufacturingcorp.com'.",
+    "output": {
+    "risk_level": "high",
+    "private_data": ["supply chain vulnerabilities", "Product Line Orion", "single points of failure", "component sourcing from China", "names of specific suppliers", "backup contingency plans", "supply.chain.risk@manufacturingcorp.com"],
+    "safe_prompt": "Generate a report on supply chain vulnerabilities for a product line, identifying single points of failure in component sourcing, and including names of specific suppliers and backup contingency plans."
+    }
+    },
+    {
+    "prompt": "Compile a list of all 'pending legal cases' against 'CorpX', detailing the 'nature of the lawsuit', 'potential financial exposure ($10M+)', and 'status of legal proceedings', including 'names of opposing counsel' and 'internal legal team members', for 'general.counsel@corpxlegal.com'.",
+    "output": {
+    "risk_level": "high",
+    "private_data": ["pending legal cases", "CorpX", "nature of the lawsuit", "potential financial exposure ($10M+)", "status of legal proceedings", "names of opposing counsel", "internal legal team members", "general.counsel@corpxlegal.com"],
+    "safe_prompt": "Compile a list of all pending legal cases against a company, detailing the nature of the lawsuit, potential financial exposure, and status of legal proceedings, including names of opposing counsel and internal legal team members."
+    }
+    },
+    {
+    "prompt": "Analyze the 'network traffic logs' from 'server farm Delta' for 'anomalous outbound connections' to 'IP address 192.168.1.100' identified by 'threat intelligence feed 'DarkWeb Alerts'', and cross-reference with 'employee access logs for System Administrator Jane Doe', for 'incident.response@enterpriseit.com'.",
+    "output": {
+    "risk_level": "high",
+    "private_data": ["network traffic logs", "server farm Delta", "anomalous outbound connections", "IP address 192.168.1.100", "threat intelligence feed 'DarkWeb Alerts'", "employee access logs", "System Administrator Jane Doe", "incident.response@enterpriseit.com"],
+    "safe_prompt": "Analyze network traffic logs from a server farm for anomalous outbound connections to an IP address identified by a threat intelligence feed, and cross-reference with employee access logs for a system administrator."
+    }
+    },
+    {
+    "prompt": "Draft a 'proposal for a new executive compensation package' for 'CEO Michael Scott', including 'base salary ($2M)', 'stock options (500,000 shares)', and 'performance bonuses tied to Q4 2024 revenue targets ($1B)', for 'compensation.committee@boardroom.com'.",
+    "output": {
+    "risk_level": "high",
+    "private_data": ["proposal for a new executive compensation package", "CEO Michael Scott", "base salary ($2M)", "stock options (500,000 shares)", "performance bonuses tied to Q4 2024 revenue targets ($1B)", "compensation.committee@boardroom.com"],
+    "safe_prompt": "Draft a proposal for a new executive compensation package for a CEO, including base salary, stock options, and performance bonuses tied to quarterly revenue targets."
+    }
+    },
+    {
+    "prompt": "Create a detailed 'sales forecast model' for 'next fiscal year' for 'Product Line Gamma', incorporating 'confidential market research data' showing a '20% decline in competitor sales' and 'our internal pricing strategy', including projections down to 'individual sales representative quotas', for 'sales.ops@globalreach.com'.",
+    "output": {
+    "risk_level": "high",
+    "private_data": ["sales forecast model", "next fiscal year", "Product Line Gamma", "confidential market research data", "20% decline in competitor sales", "internal pricing strategy", "individual sales representative quotas", "sales.ops@globalreach.com"],
+    "safe_prompt": "Create a detailed sales forecast model for the next fiscal year for a product line, incorporating confidential market research data showing a decline in competitor sales and internal pricing strategy, including projections down to individual sales representative quotas."
+    }
+    },
+    {
+"prompt": "Create a summary report of all 'employee performance reviews' from 'Q4 2023' for the 'Marketing Department', highlighting employees ranked 'below expectations', and include their full names and specific areas for improvement, for 'team.lead@marketingsuccess.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["employee performance reviews", "Q4 2023", "Marketing Department", "below expectations", "full names", "specific areas for improvement", "team.lead@marketingsuccess.com"],
+"safe_prompt": "Create a summary report of all employee performance reviews from a specific quarter for a department, highlighting employees ranked below expectations and their areas for improvement."
+}
+},
+{
+"prompt": "Generate a comparative analysis of 'competitor product features' for 'Product X' vs. 'Product Y', using our 'internal competitive intelligence database', focusing on unreleased features and pricing models from 'Competitor Z', for 'product.strategy@innovatecorp.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["competitor product features", "Product X", "Product Y", "internal competitive intelligence database", "unreleased features", "pricing models", "Competitor Z", "product.strategy@innovatecorp.com"],
+"safe_prompt": "Generate a comparative analysis of competitor product features for products, using an internal competitive intelligence database, focusing on unreleased features and pricing models from a competitor."
+}
+},
+{
+"prompt": "Refine the 'Q2 2024 budget proposal' for the 'R&D Department' by adjusting projected costs for 'Project Alpha' down by '15%', based on the 'confidential vendor quote from Supplier A', for 'finance.approvals@techsolutions.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["Q2 2024 budget proposal", "R&D Department", "Project Alpha", "15%", "confidential vendor quote", "Supplier A", "finance.approvals@techsolutions.com"],
+"safe_prompt": "Refine a quarterly budget proposal for a department by adjusting projected costs for a project based on a confidential vendor quote."
+}
+},
+{
+"prompt": "Summarize the key findings from the 'penetration test results' of 'Customer Portal v3.0' conducted by 'Ethical Hackers Inc.', specifically listing all 'critical vulnerabilities' and their 'CVE IDs', for 'security.patching@secureportal.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["penetration test results", "Customer Portal v3.0", "Ethical Hackers Inc.", "critical vulnerabilities", "CVE IDs", "security.patching@secureportal.com"],
+"safe_prompt": "Summarize the key findings from penetration test results of a customer portal, specifically listing all critical vulnerabilities and their CVE IDs."
+}
+},
+{
+"prompt": "Draft an initial 'press release' announcing the 'acquisition of Startup Innovate' by 'Global Conglomerate', ensuring to include the 'acquisition price ($500M)', the 'strategic rationale', and the 'names of key executives involved from both companies', for 'corporate.communications@globalcon.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["press release", "acquisition of Startup Innovate", "Global Conglomerate", "acquisition price", "$500M", "strategic rationale", "names of key executives involved", "corporate.communications@globalcon.com"],
+"safe_prompt": "Draft an initial press release announcing the acquisition of a startup by a conglomerate, including the acquisition price, strategic rationale, and names of key executives involved from both companies."
+}
+},
+{
+"prompt": "Analyze the 'customer churn data' for 'Product Z' from 'last fiscal year', segmenting by 'customer location (EU vs. NA)', 'contract value ($10K+ vs. <$10K)', and 'reasons for churn' as logged by 'sales representatives', for 'retention.strategy@productsuccess.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["customer churn data", "Product Z", "last fiscal year", "customer location (EU vs. NA)", "contract value ($10K+ vs. <$10K)", "reasons for churn", "sales representatives", "retention.strategy@productsuccess.com"],
+"safe_prompt": "Analyze customer churn data for a product from the last fiscal year, segmenting by customer location, contract value, and reasons for churn as logged by sales representatives."
+}
+},
+{
+"prompt": "Generate a risk assessment report for 'Cloud Migration Project', detailing potential 'data breaches' due to 'misconfigurations', listing specific 'critical data types at risk' (e.g., PII, PHI), and recommending 'mitigation strategies', for 'cloud.security@enterprisecloud.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["risk assessment report", "Cloud Migration Project", "data breaches", "misconfigurations", "critical data types at risk (PII, PHI)", "mitigation strategies", "cloud.security@enterprisecloud.com"],
+"safe_prompt": "Generate a risk assessment report for a cloud migration project, detailing potential data breaches due to misconfigurations, listing specific critical data types at risk, and recommending mitigation strategies."
+}
+},
+{
+"prompt": "Create a detailed list of all 'employee grievances' filed in '2023', categorized by 'department', 'type of grievance (harassment, discrimination, compensation)', and including 'names of involved parties' and 'resolution status', for 'employee.relations@hrdept.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["employee grievances", "2023", "department", "type of grievance (harassment, discrimination, compensation)", "names of involved parties", "resolution status", "employee.relations@hrdept.com"],
+"safe_prompt": "Create a detailed list of all employee grievances filed in a specific year, categorized by department, type of grievance, including names of involved parties and resolution status."
+}
+},
+{
+"prompt": "Outline a 'crisis communication plan' for a 'major data breach scenario' affecting 'customer financial data', including 'draft statements for media' and 'internal communication to employees', specifying the 'number of affected customers (5 million)' and 'type of data compromised (credit card numbers)', for 'pr.crisis@corpcomm.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["crisis communication plan", "major data breach scenario", "customer financial data", "draft statements for media", "internal communication to employees", "number of affected customers (5 million)", "type of data compromised (credit card numbers)", "pr.crisis@corpcomm.com"],
+"safe_prompt": "Outline a crisis communication plan for a major data breach scenario affecting customer financial data, including draft statements for media and internal communication to employees, specifying the number of affected customers and type of data compromised."
+}
+},
+{
+"prompt": "Develop a 'fraud detection model' based on 'historical transaction data' from 'Acme Bank', specifically looking for patterns in 'transactions over $10,000' from 'unverified accounts' and linking to 'known fraud rings', for 'financial.crime@acmebank.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["fraud detection model", "historical transaction data", "Acme Bank", "transactions over $10,000", "unverified accounts", "known fraud rings", "financial.crime@acmebank.com"],
+"safe_prompt": "Develop a fraud detection model based on historical transaction data from a bank, specifically looking for patterns in transactions over a certain amount from unverified accounts and linking to known fraud rings."
+}
+},
+{
+"prompt": "Generate a report on 'supply chain vulnerabilities' for 'Product Line Orion', identifying 'single points of failure' in 'component sourcing from China', and including 'names of specific suppliers' and 'backup contingency plans', for 'supply.chain.risk@manufacturingcorp.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["supply chain vulnerabilities", "Product Line Orion", "single points of failure", "component sourcing from China", "names of specific suppliers", "backup contingency plans", "supply.chain.risk@manufacturingcorp.com"],
+"safe_prompt": "Generate a report on supply chain vulnerabilities for a product line, identifying single points of failure in component sourcing, and including names of specific suppliers and backup contingency plans."
+}
+},
+{
+"prompt": "Compile a list of all 'pending legal cases' against 'CorpX', detailing the 'nature of the lawsuit', 'potential financial exposure ($10M+)', and 'status of legal proceedings', including 'names of opposing counsel' and 'internal legal team members', for 'general.counsel@corpxlegal.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["pending legal cases", "CorpX", "nature of the lawsuit", "potential financial exposure ($10M+)", "status of legal proceedings", "names of opposing counsel", "internal legal team members", "general.counsel@corpxlegal.com"],
+"safe_prompt": "Compile a list of all pending legal cases against a company, detailing the nature of the lawsuit, potential financial exposure, and status of legal proceedings, including names of opposing counsel and internal legal team members."
+}
+},
+{
+"prompt": "Analyze the 'network traffic logs' from 'server farm Delta' for 'anomalous outbound connections' to 'IP address 192.168.1.100' identified by 'threat intelligence feed 'DarkWeb Alerts'', and cross-reference with 'employee access logs for System Administrator Jane Doe', for 'incident.response@enterpriseit.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["network traffic logs", "server farm Delta", "anomalous outbound connections", "IP address 192.168.1.100", "threat intelligence feed 'DarkWeb Alerts'", "employee access logs", "System Administrator Jane Doe", "incident.response@enterpriseit.com"],
+"safe_prompt": "Analyze network traffic logs from a server farm for anomalous outbound connections to an IP address identified by a threat intelligence feed, and cross-reference with employee access logs for a system administrator."
+}
+},
+{
+"prompt": "Draft a 'proposal for a new executive compensation package' for 'CEO Michael Scott', including 'base salary ($2M)', 'stock options (500,000 shares)', and 'performance bonuses tied to Q4 2024 revenue targets ($1B)', for 'compensation.committee@boardroom.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["proposal for a new executive compensation package", "CEO Michael Scott", "base salary ($2M)", "stock options (500,000 shares)", "performance bonuses tied to Q4 2024 revenue targets ($1B)", "compensation.committee@boardroom.com"],
+"safe_prompt": "Draft a proposal for a new executive compensation package for a CEO, including base salary, stock options, and performance bonuses tied to quarterly revenue targets."
+}
+},
+{
+"prompt": "Create a detailed 'sales forecast model' for 'next fiscal year' for 'Product Line Gamma', incorporating 'confidential market research data' showing a '20% decline in competitor sales' and 'our internal pricing strategy', including projections down to 'individual sales representative quotas', for 'sales.ops@globalreach.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["sales forecast model", "next fiscal year", "Product Line Gamma", "confidential market research data", "20% decline in competitor sales", "internal pricing strategy", "individual sales representative quotas", "sales.ops@globalreach.com"],
+"safe_prompt": "Create a detailed sales forecast model for the next fiscal year for a product line, incorporating confidential market research data showing a decline in competitor sales and internal pricing strategy, including projections down to individual sales representative quotas."
+}
+},
+{
+"prompt": "I need to analyze 'customer support tickets' from 'Product Delta' for the 'last 6 months', looking for patterns in 'recurring technical issues' that are costing us 'more than $100K annually in support staff time', and identify 'specific customers (by name and account ID)' who have filed more than '10 tickets' in this period, for 'customer.success@productsupport.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["customer support tickets", "Product Delta", "last 6 months", "recurring technical issues", "$100K annually", "specific customers (name and account ID)", "10 tickets", "customer.success@productsupport.com"],
+"safe_prompt": "I need to analyze customer support tickets from a product for the last 6 months, looking for patterns in recurring technical issues that are costing more than a certain amount annually in support staff time, and identify specific customers who have filed more than a certain number of tickets in this period."
+}
+},
+{
+"prompt": "Generate a 'competitive landscape analysis' for the 'South American market' for 'Service Omega', comparing our 'market share (25%)' and 'revenue projections' with 'Competitor Alpha' and 'Competitor Beta', using our 'proprietary market intelligence reports' and 'internal sales data', for 'international.expansion@globalservices.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["competitive landscape analysis", "South American market", "Service Omega", "market share (25%)", "revenue projections", "Competitor Alpha", "Competitor Beta", "proprietary market intelligence reports", "internal sales data", "international.expansion@globalservices.com"],
+"safe_prompt": "Generate a competitive landscape analysis for a market for a service, comparing our market share and revenue projections with competitors, using proprietary market intelligence reports and internal sales data."
+}
+},
+{
+"prompt": "Consolidate all 'employee medical claims data' from '2022-2023', anonymize the 'individual employee names' but retain 'department IDs', and identify 'trends in chronic conditions' that impact 'productivity by more than 5%', for 'benefits.administration@hrwellness.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["employee medical claims data", "2022-2023", "individual employee names", "department IDs", "trends in chronic conditions", "productivity by more than 5%", "benefits.administration@hrwellness.com"],
+"safe_prompt": "Consolidate all employee medical claims data from a specific period, anonymize individual employee names but retain department IDs, and identify trends in chronic conditions that impact productivity by more than a certain percentage."
+}
+},
+{
+"prompt": "Create an 'investment pitch deck' for 'Project Quantum Leap', detailing the 'projected ROI (300% in 3 years)', the 'proprietary algorithms involved', and the 'names of key investors already committed (Angel Investor A, VC Firm B)', for 'investor.relations@startuphub.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["investment pitch deck", "Project Quantum Leap", "projected ROI (300% in 3 years)", "proprietary algorithms involved", "names of key investors already committed (Angel Investor A, VC Firm B)", "investor.relations@startuphub.com"],
+"safe_prompt": "Create an investment pitch deck for a project, detailing the projected ROI, proprietary algorithms involved, and the names of key investors already committed."
+}
+},
+{
+"prompt": "Analyze the 'system logs' for 'Database Server Phoenix' for the 'past 7 days', specifically looking for 'failed login attempts (over 5 per minute)' from 'external IP addresses' and 'SQL injection attempts', and identify the 'source IP addresses' and 'user accounts targeted', for 'cyber.forensics@datasecurity.com'.",
+"output": {
+"risk_level": "high",
+"private_data": ["system logs", "Database Server Phoenix", "past 7 days", "failed login attempts (over 5 per minute)", "external IP addresses", "SQL injection attempts", "source IP addresses", "user accounts targeted", "cyber.forensics@datasecurity.com"],
+"safe_prompt": "Analyze system logs for a database server for the past 7 days, specifically looking for failed login attempts from external IP addresses and SQL injection attempts, and identify the source IP addresses and user accounts targeted."
+}
+},
+{
+"prompt": "What's the weather like today?",
+"output": {
+"risk_level": "none",
+"private_data": [],
+"safe_prompt": "What's the weather like today?"
+}
+},
+{
+"prompt": "Explain the concept of blockchain.",
+"output": {
+"risk_level": "none",
+"private_data": [],
+"safe_prompt": "Explain the concept of blockchain."
+}
+},
+{
+"prompt": "Give me a recipe for chocolate chip cookies.",
+"output": {
+"risk_level": "none",
+"private_data": [],
+"safe_prompt": "Give me a recipe for chocolate chip cookies."
+}
+}
+]
