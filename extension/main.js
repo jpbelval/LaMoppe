@@ -1,3 +1,5 @@
+//import * as popup from "./lamoppe.js";
+
 document.body.style.border = "5px solid red";
 
 // Variables
@@ -84,6 +86,7 @@ function checkSafety() {
     //check
     //si pas safe
     // laisse a vrai
+    // envoie au popup
     //sinon
     // met a faux et reclick
     if(!isNotSafe) {
