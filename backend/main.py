@@ -1,8 +1,14 @@
-from flask import Flask
+from flask import Flask, request
 
 app = Flask(__name__)
 
 
-@app.route("/")
-def helloworld():
-    return "<p>Hello, world</p>"
+@app.route("/classifyText", methods=["POST"])
+def classify():
+        text = request.form.get("prompt")
+        return f"prompt: {text}"
+
+
+# @app.post("/generatePrompt")
+
+# @app.post("/formatPrompt")
