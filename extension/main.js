@@ -1,5 +1,4 @@
 document.body.style.border = "5px solid red";
-preSubmit()
 
 const lockKey = ["Shift", "Alt"]
 let lock = false;
@@ -9,13 +8,13 @@ addEventListener("keydown", async (event) => {
         lock = true;
     if(event.key === "Enter")
         if(!lock && (getText() != '')) {
-            event.preventDefault()
-            console.log('send');
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            event.stopPropagation();
         }
-})
+}, true);
 
 addEventListener("keyup", async (event) => {
-    console.log(getText())
     if(lockKey.includes(event.key))
         lock = false;
 })
@@ -23,30 +22,10 @@ addEventListener("keyup", async (event) => {
 document.addEventListener("click", (e) => {
     const btn = document.getElementById("composer-submit-button");
     if (!btn) return;
-
     e.preventDefault();
     e.stopImmediatePropagation();
     e.stopPropagation();
-
-    console.log("fonctionne");
-  },
-  true 
-);
-
-function preSubmit() {
-    const og = window.yr;
-    console.log(og)
-    window.__sendMessage =  function(prompt) {
-        console.log('Intercept: ', prompt);
-
-        return  og.call(this, prompt)
-    }
-}
-
-function logSubmit(event) {
-    console.log('fonctionne')
-    event.preventDefault();
-}
+}, true);
 
 function getText() {
     if (document.getElementById('prompt-textarea'))
