@@ -1,5 +1,7 @@
 Flask
 flask-cors
 chromadb
-time 
-os
+smolagents
+python-dotenv
+protobuf
+sentencepiece
