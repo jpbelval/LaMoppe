@@ -1,6 +1,6 @@
 from smolagents import CodeAgent, FinalAnswerTool, InferenceClientModel
 from dotenv import load_dotenv
-from transformers import AutoModel, AutoTokenizer
+from transformers import AutoModelForCausalLM, AutoTokenizer
 from local_inference import LocalInferenceClient
 import torch
 import yaml
@@ -29,9 +29,13 @@ class SafetyIntelligence:
         load_dotenv()
         final_answer = FinalAnswerTool()
         if local:
-            model = AutoModel.from_pretrained("meta-llama/Llama-3.1-8B-Instruct")
+            llm_model = AutoModelForCausalLM.from_pretrained(
+                            "meta-llama/Llama-3.1-8B-Instruct",
+                            torch_dtype=torch.bfloat16,
+                            device_map="auto",
+                        )
             tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-3.1-8B-Instruct")
-            model = LocalInferenceClient(model, tokenizer)
+            model = LocalInferenceClient(llm_model, tokenizer)
         else:
             model = InferenceClientModel(model_id='meta-llama/Llama-3.1-8B-Instruct')
 
