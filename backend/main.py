@@ -36,12 +36,7 @@ def create_doc():
 def get_doc():
         data = request.json
         return routes.read_document(data.get("collection"), data.get("id"))
-
-@app.route("/queryDocument", methods=["GET"])
-def query_doc():
-        data = request.json
-        return routes.query_document(data.get("collection"), data.get("query"), data.get("quantity"), data.get("filter"))
-
+        
 @app.route("/deleteDocument", methods=["DELETE"])
 def delete_doc():
         data = request.json
@@ -52,6 +47,11 @@ def update_meta():
         data = request.json
         return routes.update_document_metadata(data.get("collection"), data.get("id"), data.get("metadata"))
 
+@app.route("/filterMetadata", methods=["GET"])
+def filter_by_Meta():
+        data = request.json
+        return routes.read_documents_by_metadata(data.get("collection"), data.get("filter"))
+        
 @app.route("/getCollection", methods=["GET"])
 def get_coll():
         data = request.json
