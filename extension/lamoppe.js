@@ -44,6 +44,7 @@ function renderMessages() {
 
         // --- Bouton Review ---
         const reviewBtn = document.createElement("button");
+        reviewBtn.classList.add("reviewBtn")
         reviewBtn.textContent = "Give a review";
         if(messages[i].review) {
             reviewBtn.textContent = messages[i].review;
