@@ -2,7 +2,7 @@ from smolagents import CodeAgent, FinalAnswerTool, InferenceClientModel
 from dotenv import load_dotenv
 from peft import AutoPeftModelForCausalLM
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from local_inference import LocalModelWithStopSequences
+from local_inference import TransformersModelWithStopSequences
 import torch
 import yaml
 import os
@@ -32,7 +32,7 @@ class SafetyIntelligence:
         if local:
             raw_model = AutoPeftModelForCausalLM.from_pretrained("jpbelval/lora-llama1b-prompt-safety")
             tokenizer = AutoTokenizer.from_pretrained("jpbelval/lora-llama1b-prompt-safety")
-            model = LocalModelWithStopSequences(model=raw_model, tokenizer=tokenizer)
+            model = TransformersModelWithStopSequences(model=raw_model, tokenizer=tokenizer)
         else:
             model = InferenceClientModel(model_id='meta-llama/Llama-3.1-8B-Instruct')
         # model = InferenceClientModel(model_id="meta-llama/Llama-3.2-1B-Instruct")

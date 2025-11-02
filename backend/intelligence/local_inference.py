@@ -1,4 +1,4 @@
-from smolagents import LocalModel
+from smolagents import TransformersModel
 from transformers import StoppingCriteria, StoppingCriteriaList
 
 class StopSequencesCriteria(StoppingCriteria):
@@ -11,7 +11,7 @@ class StopSequencesCriteria(StoppingCriteria):
                 return True
         return False
 
-class LocalModelWithStopSequences(LocalModel):
+class TransformersModelWithStopSequences(TransformersModel):
     def generate(self, prompt, **kwargs):
         stop_sequences = kwargs.pop("stop_sequences", None)
 
