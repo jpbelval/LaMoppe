@@ -1,5 +1,8 @@
 from smolagents import CodeAgent, FinalAnswerTool, InferenceClientModel
 from dotenv import load_dotenv
+from peft import AutoPeftModelForCausalLM
+from transformers import AutoTokenizer, AutoModelForCausalLM
+import torch
 import yaml
 import os
 import json
@@ -22,11 +25,13 @@ class SafetyAnalysis:
         })
 
 class SafetyIntelligence:
-    def __init__(self):
+    def __init__(self, local=True):
         load_dotenv()
         final_answer = FinalAnswerTool()
-
-        model = InferenceClientModel(model_id='meta-llama/Llama-3.1-8B-Instruct')
+        if local:
+            model = AutoPeftModelForCausalLM.from_pretrained("jpbelval/lora-llama1b-prompt-safety")
+        else:
+            model = InferenceClientModel(model_id='meta-llama/Llama-3.1-8B-Instruct')
         # model = InferenceClientModel(model_id="meta-llama/Llama-3.2-1B-Instruct")
 
         prompts_path = os.path.join(os.path.dirname(__file__), "prompts.yaml")
