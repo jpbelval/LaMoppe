@@ -1,5 +1,6 @@
 from smolagents import CodeAgent, FinalAnswerTool, InferenceClientModel
 from dotenv import load_dotenv
+from transformers import AutoModel, AutoTokenizer
 from local_inference import LocalInferenceClient
 import torch
 import yaml
@@ -28,7 +29,9 @@ class SafetyIntelligence:
         load_dotenv()
         final_answer = FinalAnswerTool()
         if local:
-            model = LocalInferenceClient("./lora_llama.gguf")
+            model = AutoModel.from_pretrained("meta-llama/Llama-3.1-8B-Instruct")
+            tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-3.1-8B-Instruct")
+            model = LocalInferenceClient(model, tokenizer)
         else:
             model = InferenceClientModel(model_id='meta-llama/Llama-3.1-8B-Instruct')
 
@@ -48,5 +51,5 @@ class SafetyIntelligence:
         result = self.agent.run("Organize this data in order: \n| Name | Salary |\n|Luka | 50000 |\n|Laurent Brochu | 60000 |")
 
 if __name__ == "__main__":
-    safetyIntelligence = SafetyIntelligence()
+    safetyIntelligence = SafetyIntelligence(True)
     safetyIntelligence.analyze_prompt("Calculate the budget for Pratt & Whitney enterprise: $125 cost, $150 revenue.")
