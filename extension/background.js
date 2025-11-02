@@ -9,7 +9,10 @@ browser.runtime.onMessage.addListener((message) => {
     else if (message.event === "subCount") {
         count = count - 1;
         updateNotif();
-        messages.splice(messages.indexOf(message.data), 1);
+        let i = 0;
+        while(messages[i].uuid !== message.data)
+            i = i + 1;
+        messages.splice(i, 1);
     }
     else if (message.event === "fetchData") {
         browser.runtime.sendMessage({
@@ -17,14 +20,17 @@ browser.runtime.onMessage.addListener((message) => {
             data: messages
         });
     }
+    else if (message.event === "updateMessages") {
+        messages = message.data;
+    }
 });
 
 function sendNotification() {
     browser.notifications.create({
         type: "basic",
         iconUrl: browser.runtime.getURL("icons/logo48.png"),
-        title: "Nettoyez votre requête",
-        message: "Référez vous à l'extension"
+        title: "Clean your prompt",
+        message: "See extension for more info"
     });
 
     count = count + 1;
@@ -35,7 +41,7 @@ function sendCustom(text) {
     browser.notifications.create({
         type: "basic",
         iconUrl: browser.runtime.getURL("icons/logo48.png"),
-        title: "Nettoyez votre requête",
+        title: "Clean your prompt",
         message: text
     });
 

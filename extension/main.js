@@ -11,7 +11,7 @@ addEventListener("keydown", async (event) => {
         lock = true;
     if(event.key === "Enter")
         if(!lock && (getText() != '')) {
-            checkPrevention(event);
+            await checkPrevention(event);
         }
 }, true);
 
@@ -22,10 +22,10 @@ addEventListener("keyup", async (event) => {
 })
 
 // Event for the right click on the send button
-document.addEventListener("click", (event) => {
+document.addEventListener("click", async (event) => {
     const btn = event.target.closest("#composer-submit-button");
     if (!btn) return;
-    checkPrevention(event);
+    await checkPrevention(event);
 }, true);
 
 // Get the text in ChatGPT
@@ -37,18 +37,21 @@ function getText() {
 }
 
 // Check for prevention
-function checkPrevention(event) {
+async function checkPrevention(event) {
     if(prevent) {
         event.preventDefault();
         event.stopImmediatePropagation();
         event.stopPropagation();
         
-        //prevent = checkSafety();
-
+        data = await checkSafety();
+        data.risk_prompt = getText()
+        data.uuid = crypto.randomUUID()
+        console.log(data.risk_prompt)
+        prevent = data?.risk_level !== "none";
         if(prevent)
             browser.runtime.sendMessage({
                 event: "NewMessage",
-                data: getText()
+                data: data
             });
         else
             document.getElementById("composer-submit-button").click();
@@ -59,40 +62,32 @@ function checkPrevention(event) {
 }
 
 // Check the prompt with AI
-function checkSafety() {
+async function checkSafety() {
     // // test 
-    // promptText = getText()
-    // const apiUrl = 'http://localhost:5000/classifyText';
-    // const postData = {
-    //     prompt: promptText
-    // };
-    // console.log(JSON.stringify(postData))
+    promptText = getText()
+    const apiUrl = 'http://localhost:5000/classifyText';
+    const postData = {
+        prompt: promptText
+    };
+    try {
+        const response = await fetch(apiUrl, {
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(postData)
+        });
 
-    // fetch(apiUrl, {
-    //     method: 'POST', 
-    //     headers: {
-    //         'Content-Type': 'application/json'
-    //     },
-    //     body: JSON.stringify(postData)
-    // })
-    // .then(response => {
-    //     if (!response.ok) {
-    //         throw new Error(`HTTP error! status: ${response.status}`);
-    //     }
-    //     return response.json();
-    // })
-    // .then(data => {
-    //     console.log('Success:', data);
-    // })
-    // .catch(error => {
-    //     console.error('Error during fetch operation:', error);
-    // });
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
 
-    let isNotSafe = false;
-    //check
-    //si pas safe
-    // laisse a vrai
-    //sinon
-    // met a faux et reclick
-    return isNotSafe;
+        const data = await response.json();
+        console.log('Success:', data);
+        
+        return data;
+    } catch (error) {
+        console.error('Error during fetch operation:', error);
+        return null;
+    }
 }
