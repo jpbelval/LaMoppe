@@ -1,5 +1,7 @@
 from smolagents import CodeAgent, FinalAnswerTool, InferenceClientModel
 from dotenv import load_dotenv
+from local_inference import LocalInferenceClient
+import torch
 import yaml
 import os
 import json
@@ -22,12 +24,13 @@ class SafetyAnalysis:
         })
 
 class SafetyIntelligence:
-    def __init__(self):
+    def __init__(self, local=False):
         load_dotenv()
         final_answer = FinalAnswerTool()
-
-        model = InferenceClientModel(model_id='meta-llama/Llama-3.1-8B-Instruct')
-        # model = InferenceClientModel(model_id="meta-llama/Llama-3.2-1B-Instruct")
+        if local:
+            model = LocalInferenceClient("./lora_llama.gguf")
+        else:
+            model = InferenceClientModel(model_id='meta-llama/Llama-3.1-8B-Instruct')
 
         prompts_path = os.path.join(os.path.dirname(__file__), "prompts.yaml")
 
@@ -35,6 +38,7 @@ class SafetyIntelligence:
             prompt_templates = yaml.safe_load(stream)
 
         self.agent = CodeAgent(tools=[final_answer], model=model, prompt_templates=prompt_templates)
+
     def analyze_prompt(self, prompt: str) -> SafetyAnalysis:
         return SafetyAnalysis.from_json(self.agent.run(prompt))
 

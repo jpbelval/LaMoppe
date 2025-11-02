@@ -1,32 +1,43 @@
-from smolagents import TransformersModel
-from transformers import StoppingCriteria, StoppingCriteriaList
+from llama_cpp import Llama
+import yaml
+from dotenv import load_dotenv
+from transformers import AutoModel, AutoTokenizer
 
-class StopSequencesCriteria(StoppingCriteria):
-    def __init__(self, stop_token_ids):
-        self.stop_token_ids = stop_token_ids
+class LocalInferenceClient:
+    def __init__(self, model_path, default_max_tokens=256):
+        self.llm = Llama(model_path=model_path)
+        self.default_max_tokens = default_max_tokens
 
-    def __call__(self, input_ids, scores, **kwargs):
-        for seq in self.stop_token_ids:
-            if input_ids[0, -len(seq):].tolist() == seq:
-                return True
-        return False
-
-class TransformersModelWithStopSequences(TransformersModel):
     def generate(self, prompt, **kwargs):
-        stop_sequences = kwargs.pop("stop_sequences", None)
+        # If prompt is a ChatMessage object, extract text
+        with open("./system_prompt.yaml", 'r') as stream:
+            system_prompt = yaml.safe_load(stream)
+        prompt = system_prompt["system_prompt"] + "/n user" + prompt
 
-        stopping_criteria = kwargs.pop("stopping_criteria", None)
+        # Handle max_tokens safely
+        max_tokens = kwargs.get("max_new_tokens", self.default_max_tokens)
+        try:
+            max_tokens = int(max_tokens)
+        except (TypeError, ValueError):
+            raise ValueError(f"max_new_tokens must be an integer, got {type(max_tokens)}")
 
-        if stop_sequences is not None:
-            stop_token_ids = [
-                self.tokenizer(seq, add_special_tokens=False)["input_ids"]
-                for seq in stop_sequences
-            ]
-            stop_criteria = StopSequencesCriteria(stop_token_ids)
-            if stopping_criteria is not None:
-                stopping_criteria.append(stop_criteria)
-            else:
-                stopping_criteria = StoppingCriteriaList([stop_criteria])
-            kwargs["stopping_criteria"] = stopping_criteria
+        temperature = kwargs.get("temperature", 0.7)
+        top_p = kwargs.get("top_p", 1.0)
+        stop_sequences = kwargs.get("stop_sequences", None)
 
-        return super().generate(prompt, **kwargs)
+        output = self.llm(
+            prompt,
+            max_tokens=max_tokens,
+            temperature=temperature,
+            top_p=top_p,
+            stop=stop_sequences
+        )
+        print(output)
+        return output
+    
+if __name__ == "__main__":
+    load_dotenv()
+    model = AutoModel.from_pretrained("meta-llama/Llama-3.1-8B-Instruct")
+    tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-3.1-8B-Instruct")
+    model.save_pretrained("./hf_model")
+    tokenizer.save_pretrained("./hf_model")
