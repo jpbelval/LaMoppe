@@ -50,7 +50,7 @@ function renderMessages() {
         copyBtn.addEventListener("click", () => {
             const textElement = messages[i].safe_prompt;
             navigator.clipboard.writeText(textElement)
-            alert("Copy to clipboard");
+            copyBtn.style.backgroundColor = "#7300ffff";
         });
 
         // --- Bouton Review ---
