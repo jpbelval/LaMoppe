@@ -1,6 +1,7 @@
 from smolagents import CodeAgent, FinalAnswerTool, InferenceClientModel
 from dotenv import load_dotenv
 import yaml
+import os
 
 class SafetyAnalysis():
     def __init__(self, risk_level, private_data, safe_prompt ):
@@ -20,7 +21,9 @@ class SafetyIntelligence:
         model = InferenceClientModel(model_id='meta-llama/Llama-3.1-8B-Instruct')
         # model = InferenceClientModel(model_id="meta-llama/Llama-3.2-1B-Instruct")
 
-        with open("./prompts.yaml", 'r') as stream:
+        prompts_path = os.path.join(os.path.dirname(__file__), "prompts.yaml")
+
+        with open(prompts_path, 'r') as stream:
             prompt_templates = yaml.safe_load(stream)
 
         self.agent = CodeAgent(tools=[final_answer], model=model, prompt_templates=prompt_templates)
@@ -32,3 +35,6 @@ class SafetyIntelligence:
         result = self.agent.run("Organize this data in order: \n| Name | Social security number | Salary |\n|Luka | 945 234 567 | 50000 |\n|Laurent Brochu | 456 098 234 | 60000 |")
         result = self.agent.run("Organize this data in order: \n| Name | Salary |\n|Luka | 50000 |\n|Laurent Brochu | 60000 |")
 
+if __name__ == "__main__":
+    safetyIntelligence = SafetyIntelligence()
+    safetyIntelligence.analyze_prompt("Calculate the budget for Pratt & Whitney enterprise: $125 cost, $150 revenue.")
