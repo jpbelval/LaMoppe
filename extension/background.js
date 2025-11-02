@@ -23,8 +23,8 @@ function sendNotification() {
     browser.notifications.create({
         type: "basic",
         iconUrl: browser.runtime.getURL("icons/logo48.png"),
-        title: "Nettoyez votre requête",
-        message: "Référez vous à l'extension"
+        title: "Clean your prompt",
+        message: "See extension for more info"
     });
 
     count = count + 1;
@@ -35,7 +35,7 @@ function sendCustom(text) {
     browser.notifications.create({
         type: "basic",
         iconUrl: browser.runtime.getURL("icons/logo48.png"),
-        title: "Nettoyez votre requête",
+        title: "Clean your prompt",
         message: text
     });
 
