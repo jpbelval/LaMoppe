@@ -132,9 +132,9 @@ function renderMessages() {
         const p = document.createElement("p");
         p.textContent = msg.safe_prompt;
 
-        // Bouton X
+        // Bouton crochet
         const removeBtn = document.createElement("button");
-        removeBtn.textContent = "X";
+        removeBtn.textContent = String.fromCharCode(0x2713);
         removeBtn.classList.add("remove-btn");
         removeBtn.addEventListener("click", () => {
             const subMessage = messages.splice(i, 1);
