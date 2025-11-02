@@ -77,6 +77,7 @@ function renderMessages() {
                 reviewBtn.disabled = true;
 
                 messages[i].review = finalNumber;
+                sendReview(message[i])
 
                 // Retirer l'animation
                 reviewBtn.classList.remove("spinning");
@@ -138,4 +139,31 @@ function renderMessages() {
         line.appendChild(removeBtn);
         messageContainer.appendChild(line);
     });
+}
+
+async function sendReview(postData){
+    delete postData.uuid;
+    delete postData.risk_prompt;
+    const apiUrl = 'http://localhost:5000/createRating';
+    const postData = {
+        prompt: promptText
+    };
+    try {
+        const response = await fetch(apiUrl, {
+            method: 'POST', 
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(postData)
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log('Success:', data);
+    } catch (error) {
+        console.error('Error during fetch operation:', error);
+    }
 }
