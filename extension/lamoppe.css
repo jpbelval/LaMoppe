@@ -1,12 +1,12 @@
 /* popup.css — Tomorrow Night Blue (version corrigée et harmonieuse) */
 
 :root {
-  --bg: #002451;
-  --bg-dark: #001b39;
-  --fg: #ffffff;
-  --muted: #9aa6bf;
-  --accent: #66d9ef;
-  --sep: #223449;
+  --bg: #121212;
+  --bg-dark: #121212;
+  --fg: #e1e1e1;
+  --muted: #9f9f9f;
+  --accent: #9f9f9f;
+  --sep: #767d86;
   --shadow: rgba(0, 0, 0, 0.25);
   --danger: #ff5c5c;
 }
@@ -44,57 +44,45 @@ h1 {
   width: 100%;
 }
 
-/* Conteneur des messages */
-#prompts-container {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.message-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 12px;
+    margin-bottom: 12px;
+    background: #1e1e1e;
+    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
-/* Chaque ligne (texte + X) */
-#prompts-container > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* ⬅️ le bouton reste en haut */
-  background: var(--bg-dark);
-  border: 1px solid var(--sep);
-  border-radius: 10px;
-  padding: 10px 14px;
-  box-shadow: 0 3px 6px var(--shadow);
-  transition: background 0.2s ease, transform 0.2s ease;
-  gap: 10px; /* espace entre le texte et le bouton */
+.risk-header {
+    font-weight: 600;
+    color: #bb86fc;
+    margin: 0;
 }
 
-#prompts-container > div:hover {
-  background: #003366;
-  transform: translateY(-1px);
+.risk-prompt mark {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 0 2px;
+    border-radius: 2px;
 }
 
-/* Texte du message — peut se couper sur plusieurs lignes */
-#prompts-container p {
-  margin: 0;
-  color: var(--muted);
-  flex: 1;
-  line-height: 1.5;
-  font-size: 14px;
-  white-space: normal;
-  word-break: break-word;
+.safe-prompt {
+    margin: 0;
+    color: #e1e1e1;
 }
 
-/* Bouton X — en haut à droite, discret mais clair */
-button.x {
-  background: var(--danger);
-  color: #fff;
-  border: none;
-  padding: 4px 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  flex-shrink: 0;
-  transition: background 0.2s ease, transform 0.1s ease;
-  box-shadow: 0 1px 3px var(--shadow);
-  text-align: center;
-  align-self: flex-start; /* ⬅️ s’aligne en haut */
+.toggle-btn, .remove-btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 4px 0;
+    font-size: 0.9em;
+    color: #bb86fc;
+    transition: color 0.2s;
 }
 
 button:disabled {
@@ -116,4 +104,22 @@ button.spinning {
 button.x:hover {
   background: #ff7777;
   transform: scale(1.05);
+}
+
+.toggle-btn:hover {
+    color: #bb86fc;
+    text-decoration: underline;
+}
+
+.remove-btn {
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    color: #888;
+    font-size: 1.2em;
+    line-height: 1;
+}
+
+.remove-btn:hover {
+    color: #bb86fc;
 }

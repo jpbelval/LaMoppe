@@ -1,8 +1,9 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import os
 import routes
 from flask_cors import CORS
 from intelligence.app import SafetyIntelligence
+import json
 
 
 app = Flask(__name__)
@@ -16,16 +17,21 @@ safetyIntelligence = SafetyIntelligence()
 def classify():
         text = request.json.get("prompt")
         safetyAnalysis = safetyIntelligence.analyze_prompt(text)
-        safetyAnalysis = jsonify(safetyAnalysis)
-        return jsonify({
-            "message": "Received successfully",
-            "received": text
-        })
+        json_result = safetyAnalysis.to_json()
+        return json_result
 
+@app.route("/stats/dashboard")
+def dashboard():
+    return render_template('dashboard.html')
 
-@app.route("/test-db", methods=["GET"])
-def test():
-        return routes.test_db()
+@app.route('/stats/fetch')
+def getStats():
+    data = {
+        "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        "values": [12, 19, 3, 5, 2, 3, 7],
+        "avg": 7.3
+    }
+    return jsonify(data)
 
 @app.route("/createDocument", methods=["POST"])
 def create_doc():
@@ -36,12 +42,7 @@ def create_doc():
 def get_doc():
         data = request.json
         return routes.read_document(data.get("collection"), data.get("id"))
-
-@app.route("/queryDocument", methods=["GET"])
-def query_doc():
-        data = request.json
-        return routes.query_document(data.get("collection"), data.get("query"), data.get("quantity"), data.get("filter"))
-
+        
 @app.route("/deleteDocument", methods=["DELETE"])
 def delete_doc():
         data = request.json
@@ -52,6 +53,11 @@ def update_meta():
         data = request.json
         return routes.update_document_metadata(data.get("collection"), data.get("id"), data.get("metadata"))
 
+@app.route("/filterMetadata", methods=["GET"])
+def filter_by_Meta():
+        data = request.json
+        return routes.read_documents_by_metadata(data.get("collection"), data.get("filter"))
+        
 @app.route("/getCollection", methods=["GET"])
 def get_coll():
         data = request.json
