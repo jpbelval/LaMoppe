@@ -63,7 +63,7 @@ def create_doc():
 @app.route("/createRating", methods=["POST"])
 def create_data():
         data = request.json
-        return routes.create_rating(data.get("risk_level"), data.get("rating"), data.get("problems"), data.get("safe_prompt"))
+        return routes.create_rating(data.get("risk_level"), data.get("review"), data.get("private_data"), data.get("safe_prompt"))
 
 @app.route("/getDocument", methods=["GET"])
 def get_doc():

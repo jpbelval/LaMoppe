@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 from uuid import uuid4
 from db_actions import get_db_client
 from json_formatter import format_json
+import json
 
 def create_document(collection_name, content, metadata):
         try:
@@ -97,7 +98,7 @@ def delete_collection(collection_name):
         except Exception as e:
                 return {"success": False, "error": str(e)}
 
-def create_rating(risk_level, rating, problems, safe_prompt):
+def create_rating(risk_level, review, private_data, safe_prompt):
         try:
                 client = get_db_client()
                 collection = client.get_or_create_collection(name="JP_la_collection")
@@ -105,8 +106,8 @@ def create_rating(risk_level, rating, problems, safe_prompt):
 
                 metadata = {
                         "risk_level": risk_level,
-                        "rating": rating,
-                        "problems": problems
+                        "review": review,
+                        "private_data": json.dumps(private_data)
                 }
                 collection.add(
                         documents=[safe_prompt],

@@ -78,7 +78,6 @@ function renderMessages() {
                 reviewBtn.disabled = true;
 
                 messages[i].review = finalNumber;
-                sendReview(message[i])
 
                 // Retirer l'animation
                 reviewBtn.classList.remove("spinning");
@@ -90,6 +89,7 @@ function renderMessages() {
                     event: "updateMessages",
                     data: messages
                 });
+                sendReview(message[i])
             }, 6000);
         });
 
@@ -142,12 +142,13 @@ function renderMessages() {
     });
 }
 
-async function sendReview(postData){
-    delete postData.uuid;
-    delete postData.risk_prompt;
+async function sendReview(data){
     const apiUrl = 'http://localhost:5000/createRating';
     const postData = {
-        prompt: promptText
+        risk_level: data.risk_level,
+        private_data: data.private_data,
+        safe_prompt: data.safe_prompt,
+        review: data.review
     };
     try {
         const response = await fetch(apiUrl, {
