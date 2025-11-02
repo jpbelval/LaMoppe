@@ -20,6 +20,9 @@ browser.runtime.onMessage.addListener((message) => {
             data: messages
         });
     }
+    else if (message.event === "updateMessages") {
+        messages = message.data;
+    }
 });
 
 function sendNotification() {

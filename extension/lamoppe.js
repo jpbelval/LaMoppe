@@ -45,6 +45,10 @@ function renderMessages() {
         // --- Bouton Review ---
         const reviewBtn = document.createElement("button");
         reviewBtn.textContent = "Give a review";
+        if(messages[i].review) {
+            reviewBtn.textContent = messages[i].review;
+            reviewBtn.disabled = true;
+        }
         reviewBtn.addEventListener("click", () => {
             let intervalId;
 
@@ -72,12 +76,18 @@ function renderMessages() {
                 reviewBtn.textContent = finalNumber;
                 reviewBtn.disabled = true;
 
+                messages[i].review = finalNumber;
+
                 // Retirer l'animation
                 reviewBtn.classList.remove("spinning");
 
                 // Arrêter le son
                 spinSound.pause();
                 spinSound.currentTime = 0;
+                browser.runtime.sendMessage({
+                    event: "updateMessages",
+                    data: messages
+                });
             }, 6000);
         });
 
