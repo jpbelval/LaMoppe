@@ -98,7 +98,6 @@ function renderMessages() {
                     event: "updateMessages",
                     data: messages
                 });
-                sendReview(message[i])
             }, 6000);
         });
 
@@ -155,32 +154,4 @@ function renderMessages() {
         line.appendChild(removeBtn);
         messageContainer.appendChild(line);
     });
-}
-
-async function sendReview(data){
-    const apiUrl = 'http://localhost:5000/createRating';
-    const postData = {
-        risk_level: data.risk_level,
-        private_data: data.private_data,
-        safe_prompt: data.safe_prompt,
-        review: data.review
-    };
-    try {
-        const response = await fetch(apiUrl, {
-            method: 'POST', 
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(postData)
-        });
-
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-
-        const data = await response.json();
-        console.log('Success:', data);
-    } catch (error) {
-        console.error('Error during fetch operation:', error);
-    }
 }
