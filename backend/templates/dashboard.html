@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Stats Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Weekly Stats</h1>
+        <div class="card">
+            <canvas id="lineChart"></canvas>
+        </div>
+
+        <div class="stats">
+            <div class="stat-card">
+                <h2 id="avg">0</h2>
+                <p>Average</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function loadStats() {
+            const res = await fetch('/stats/fetch');
+            const data = await res.json();
+
+            // Update average value
+            document.getElementById('avg').textContent = data.avg;
+
+            // Line chart
+            new Chart(document.getElementById('lineChart'), {
+                type: 'line',
+                data: {
+                    labels: data.labels,
+                    datasets: [{
+                        label: 'Daily Values',
+                        data: data.values,
+                        borderColor: '#007bff',
+                        borderWidth: 2,
+                        fill: false,
+                        tension: 0.3
+                    }]
+                },
+                options: {
+                    plugins: { legend: { display: false } },
+                    scales: { y: { beginAtZero: true } }
+                }
+            });
+        }
+
+        loadStats();
+    </script>
+</body>
+</html>

@@ -1,6 +1,4 @@
-//import * as popup from "./lamoppe.js";
-
-document.body.style.border = "5px solid red";
+document.body.style.border = "2px solid red";
 
 // Variables
 const lockKey = ["Shift", "Alt"]
@@ -45,7 +43,15 @@ function checkPrevention(event) {
         event.stopImmediatePropagation();
         event.stopPropagation();
         
-        prevent = checkSafety();
+        //prevent = checkSafety();
+
+        if(prevent)
+            browser.runtime.sendMessage({
+                event: "NewMessage",
+                data: getText()
+            });
+        else
+            document.getElementById("composer-submit-button").click();
     }
     else {
         prevent = true
@@ -54,43 +60,39 @@ function checkPrevention(event) {
 
 // Check the prompt with AI
 function checkSafety() {
-    // test 
-    promptText = getText()
-    const apiUrl = 'http://localhost:5000/classifyText';
-    const postData = {
-        prompt: promptText
-    };
-    console.log(JSON.stringify(postData))
+    // // test 
+    // promptText = getText()
+    // const apiUrl = 'http://localhost:5000/classifyText';
+    // const postData = {
+    //     prompt: promptText
+    // };
+    // console.log(JSON.stringify(postData))
 
-    fetch(apiUrl, {
-        method: 'POST', 
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(postData)
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json();
-    })
-    .then(data => {
-        console.log('Success:', data);
-    })
-    .catch(error => {
-        console.error('Error during fetch operation:', error);
-    });
+    // fetch(apiUrl, {
+    //     method: 'POST', 
+    //     headers: {
+    //         'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify(postData)
+    // })
+    // .then(response => {
+    //     if (!response.ok) {
+    //         throw new Error(`HTTP error! status: ${response.status}`);
+    //     }
+    //     return response.json();
+    // })
+    // .then(data => {
+    //     console.log('Success:', data);
+    // })
+    // .catch(error => {
+    //     console.error('Error during fetch operation:', error);
+    // });
 
-    let isNotSafe = true;
+    let isNotSafe = false;
     //check
     //si pas safe
     // laisse a vrai
-    // envoie au popup
     //sinon
     // met a faux et reclick
-    if(!isNotSafe) {
-        document.getElementById("composer-submit-button").click();
-    }
     return isNotSafe;
 }
