@@ -1,7 +1,5 @@
 from smolagents import CodeAgent, FinalAnswerTool, InferenceClientModel
 from dotenv import load_dotenv
-from local_inference import LocalInferenceClient
-import torch
 import yaml
 import os
 import json
