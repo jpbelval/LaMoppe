@@ -1,8 +1,5 @@
-from smolagents import CodeAgent, FinalAnswerTool, InferenceClientModel, TransformersModel, LiteLLMModel
+from smolagents import CodeAgent, FinalAnswerTool, InferenceClientModel, LiteLLMModel
 from dotenv import load_dotenv
-from transformers import AutoModelForCausalLM, AutoTokenizer
-from local_inference import LocalInferenceClient
-import torch
 import yaml
 import os
 import json
