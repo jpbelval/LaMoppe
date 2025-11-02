@@ -97,6 +97,22 @@ button.x {
   align-self: flex-start; /* ⬅️ s’aligne en haut */
 }
 
+button:disabled {
+    opacity: 1;           /* garde le bouton bien visible */
+    cursor: default;      /* ou pointer si tu veux */
+    background-color: #f0f0f0; /* couleur de fond claire */
+    color: black;         /* texte visible */
+}
+
+@keyframes rotateNumber {
+    0% { transform: rotateX(0deg); }
+    100% { transform: rotateX(360deg); }
+}
+
+button.spinning {
+    animation: rotateNumber 0.4s linear infinite;
+}
+
 button.x:hover {
   background: #ff7777;
   transform: scale(1.05);

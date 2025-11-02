@@ -34,6 +34,10 @@
     "webRequestBlocking"
   ],
 
+  "web_accessible_resources": [
+    "sounds/csgo.mp3"
+  ],
+
   "content_scripts": [
     {
       "matches": ["*://*.chatgpt.com/*"],
