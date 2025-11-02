@@ -1,5 +1,5 @@
 Flask
 flask-cors
 chromadb
-time 
-os
+smolagents==1.22.0
+python-dotenv
