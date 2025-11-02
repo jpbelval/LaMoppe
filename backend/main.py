@@ -23,10 +23,6 @@ def classify():
         })
 
 
-@app.route("/test-db", methods=["GET"])
-def test():
-        return routes.test_db()
-
 @app.route("/createDocument", methods=["POST"])
 def create_doc():
         data = request.json
