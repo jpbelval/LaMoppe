@@ -45,6 +45,7 @@ async function checkPrevention(event) {
         
         data = await checkSafety();
         data.risk_prompt = getText()
+        data.uuid = crypto.randomUUID()
         console.log(data.risk_prompt)
         prevent = data?.risk_level !== "none";
         if(prevent)
