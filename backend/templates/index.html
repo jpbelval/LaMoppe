@@ -42,21 +42,24 @@
         #pie-chart-tile {
             grid-column: 1 / 2;
             grid-row: 1 / 2;
-            height: 400px; /* Hauteur fixe pour empêcher la croissance */
+            height: 450px; /* Hauteur fixe pour empêcher la croissance */
+            padding-bottom: 32px; /* Padding supplémentaire en bas */
         }
 
         /* --- Tuile 2 : Line Chart (s'étend sur 2 colonnes) --- */
         #line-chart-tile {
             grid-column: 2 / 4; /* S'étend de la colonne 2 à 4 */
             grid-row: 1 / 2;
-            height: 400px; /* Hauteur fixe pour empêcher la croissance */
+            height: 450px; /* Hauteur fixe pour empêcher la croissance */
+            padding-bottom: 32px; /* Padding supplémentaire en bas */
         }
 
         /* --- Tuile 3 : 5 Récents --- */
         #recent-tile {
             grid-column: 1 / 2;
             grid-row: 2 / 3;
-            min-height: 400px;
+            min-height: 450px;
+            padding-bottom: 32px; /* Padding supplémentaire en bas */
         }
         
         #recent-list {
@@ -96,7 +99,8 @@
             align-items: center; /* Centre le contenu */
             justify-content: center; /* Centre le contenu */
             text-align: center;
-            min-height: 400px;
+            min-height: 450px;
+            padding-bottom: 32px; /* Padding supplémentaire en bas */
             /* Petit dégradé comme demandé */
             background: linear-gradient(145deg, #2a2a2a, #1e1e1e);
         }
@@ -111,7 +115,8 @@
         #topics-tile {
             grid-column: 3 / 4;
             grid-row: 2 / 3;
-            min-height: 400px;
+            min-height: 450px;
+            padding-bottom: 32px; /* Padding supplémentaire en bas */
         }
 
         .topics-list {

@@ -4,8 +4,7 @@ import routes
 from flask_cors import CORS
 from intelligence.app import SafetyIntelligence
 import json
-from dashboard_logic import get_mock_data, get_new_recent_ratings, get_rating_color_class, get_risk_color_class
-
+from dashboard_logic import get_real_data, get_new_recent_ratings, get_rating_color_class, get_risk_color_class
 
 app = Flask(__name__)
 
@@ -13,6 +12,7 @@ CHROMA_HOST = os.getenv("CHROMA_HOST", "localhost")
 chroma_client = None
 CORS(app, origins="*")
 safetyIntelligence = SafetyIntelligence()
+
 
 # Register Jinja2 helper functions
 @app.context_processor
@@ -31,7 +31,7 @@ def classify():
 
 @app.route("/stats/dashboard")
 def dashboard():
-    data = get_mock_data()
+    data = get_real_data()
     return render_template('index.html', **data)
 
 @app.route('/stats/fetch')
@@ -52,7 +52,7 @@ def recent_ratings():
 @app.route('/api/dashboard-data')
 def dashboard_data():
     """API endpoint for polling all dashboard data."""
-    data = get_mock_data()
+    data = get_real_data()
     return jsonify(data)
 
 @app.route("/createDocument", methods=["POST"])
