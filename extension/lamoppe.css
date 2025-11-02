@@ -1,0 +1,103 @@
+/* popup.css — Tomorrow Night Blue (version corrigée et harmonieuse) */
+
+:root {
+  --bg: #002451;
+  --bg-dark: #001b39;
+  --fg: #ffffff;
+  --muted: #9aa6bf;
+  --accent: #66d9ef;
+  --sep: #223449;
+  --shadow: rgba(0, 0, 0, 0.25);
+  --danger: #ff5c5c;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 420px;
+  font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Structure principale */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 14px;
+}
+
+/* Titre */
+h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--accent);
+  margin: 0;
+  text-align: center;
+  border-bottom: 1px solid var(--sep);
+  padding-bottom: 8px;
+  width: 100%;
+}
+
+/* Conteneur des messages */
+#prompts-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Chaque ligne (texte + X) */
+#prompts-container > div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* ⬅️ le bouton reste en haut */
+  background: var(--bg-dark);
+  border: 1px solid var(--sep);
+  border-radius: 10px;
+  padding: 10px 14px;
+  box-shadow: 0 3px 6px var(--shadow);
+  transition: background 0.2s ease, transform 0.2s ease;
+  gap: 10px; /* espace entre le texte et le bouton */
+}
+
+#prompts-container > div:hover {
+  background: #003366;
+  transform: translateY(-1px);
+}
+
+/* Texte du message — peut se couper sur plusieurs lignes */
+#prompts-container p {
+  margin: 0;
+  color: var(--muted);
+  flex: 1;
+  line-height: 1.5;
+  font-size: 14px;
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* Bouton X — en haut à droite, discret mais clair */
+button.x {
+  background: var(--danger);
+  color: #fff;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: background 0.2s ease, transform 0.1s ease;
+  box-shadow: 0 1px 3px var(--shadow);
+  text-align: center;
+  align-self: flex-start; /* ⬅️ s’aligne en haut */
+}
+
+button.x:hover {
+  background: #ff7777;
+  transform: scale(1.05);
+}
