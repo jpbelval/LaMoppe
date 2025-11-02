@@ -42,21 +42,9 @@ function renderMessages() {
         safeP.classList.add("safe-prompt");
         safeP.style.display = "none";
 
-        // Toggle button
-        const toggleBtn = document.createElement("button");
-        toggleBtn.textContent = "Show safe prompt";
-        toggleBtn.classList.add("toggle-btn");
-
-        toggleBtn.addEventListener("click", () => {
-            const isVisible = safeP.style.display === "block";
-            safeP.style.display = isVisible ? "none" : "block";
-            toggleBtn.textContent = isVisible ? "Show safe prompt" : "Hide safe prompt";
-        });
-
         // --- Bouton Review ---
         const reviewBtn = document.createElement("button");
-        reviewBtn.textContent = "Review";
-
+        reviewBtn.textContent = "Give a review";
         reviewBtn.addEventListener("click", () => {
             let intervalId;
 
@@ -84,12 +72,6 @@ function renderMessages() {
                 reviewBtn.textContent = finalNumber;
                 reviewBtn.disabled = true;
 
-                // Garder le bouton clair
-                reviewBtn.style.opacity = "1";
-                reviewBtn.style.backgroundColor = "#f0f0f0";
-                reviewBtn.style.color = "black";
-                reviewBtn.style.cursor = "default";
-
                 // Retirer l'animation
                 reviewBtn.classList.remove("spinning");
 
@@ -99,6 +81,26 @@ function renderMessages() {
             }, 6000);
         });
 
+        // Toggle button
+        const toggleBtn = document.createElement("button");
+        toggleBtn.textContent = "Show safe prompt";
+        toggleBtn.classList.add("toggle-btn");
+
+        toggleBtn.addEventListener("click", () => {
+            const isVisible = safeP.style.display === "block";
+            safeP.style.display = isVisible ? "none" : "block";
+            toggleBtn.textContent = isVisible ? "Show safe prompt" : "Hide safe prompt";
+
+            if (!isVisible && msg.safe_prompt) {
+                if (!line.contains(reviewBtn)) {
+                    line.appendChild(reviewBtn);
+                }
+            } else {
+                if (line.contains(reviewBtn)) {
+                    line.removeChild(reviewBtn);
+                }
+            }
+        });
 
         // Texte message
         const p = document.createElement("p");
@@ -113,7 +115,7 @@ function renderMessages() {
             renderMessages();
             browser.runtime.sendMessage({
                 event: "subCount",
-                data: removed[0]
+                data: subMessage[0].uuid
             });
         });
 

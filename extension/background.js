@@ -9,7 +9,10 @@ browser.runtime.onMessage.addListener((message) => {
     else if (message.event === "subCount") {
         count = count - 1;
         updateNotif();
-        messages.splice(messages.indexOf(message.data), 1);
+        let i = 0;
+        while(messages[i].uuid !== message.data)
+            i = i + 1;
+        messages.splice(i, 1);
     }
     else if (message.event === "fetchData") {
         browser.runtime.sendMessage({
