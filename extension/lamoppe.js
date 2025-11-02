@@ -42,13 +42,23 @@ function renderMessages() {
         safeP.classList.add("safe-prompt");
         safeP.style.display = "none";
 
+        // Copy to clip board btn
+        const copyBtn = document.createElement("button");
+        copyBtn.classList.add("reviewBtn");
+        copyBtn.textContent = "Copy";
+
+        copyBtn.addEventListener("click", () => {
+            const textElement = messages[i].safe_prompt;
+            navigator.clipboard.writeText(textElement)
+            alert("Copy to clipboard");
+        });
+
         // --- Bouton Review ---
         const reviewBtn = document.createElement("button");
         reviewBtn.classList.add("reviewBtn")
         reviewBtn.textContent = "Give a review";
         if(messages[i].review) {
             reviewBtn.textContent = messages[i].review;
-            reviewBtn.disabled = true;
         }
         reviewBtn.addEventListener("click", () => {
             let intervalId;
@@ -75,7 +85,6 @@ function renderMessages() {
                 clearInterval(intervalId);
                 const finalNumber = Math.floor(Math.random() * 10) + 1;
                 reviewBtn.textContent = finalNumber;
-                reviewBtn.disabled = true;
 
                 messages[i].review = finalNumber;
 
@@ -93,6 +102,12 @@ function renderMessages() {
             }, 6000);
         });
 
+        const btnWrapper = document.createElement("div");
+        btnWrapper.classList.add("line-buttons");
+        btnWrapper.appendChild(reviewBtn);
+        btnWrapper.appendChild(copyBtn);
+
+
         // Toggle button
         const toggleBtn = document.createElement("button");
         toggleBtn.textContent = "Show safe prompt";
@@ -104,12 +119,12 @@ function renderMessages() {
             toggleBtn.textContent = isVisible ? "Show safe prompt" : "Hide safe prompt";
 
             if (!isVisible && msg.safe_prompt) {
-                if (!line.contains(reviewBtn)) {
-                    line.appendChild(reviewBtn);
+                if (!line.contains(btnWrapper)) {
+                    line.appendChild(btnWrapper);
                 }
             } else {
-                if (line.contains(reviewBtn)) {
-                    line.removeChild(reviewBtn);
+                if (line.contains(btnWrapper)) {
+                    line.removeChild(btnWrapper);
                 }
             }
         });

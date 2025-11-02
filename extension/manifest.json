@@ -30,6 +30,7 @@
     "storage",
     "activeTab",
     "notifications",
+    "clipboardWrite",
     "webRequest",
     "webRequestBlocking"
   ],

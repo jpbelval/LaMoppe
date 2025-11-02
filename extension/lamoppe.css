@@ -56,6 +56,13 @@ h1 {
     box-shadow: 0 1px 3px rgba(0,0,0,0.05);
 }
 
+.line-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 4px;
+}
+
 .risk-header {
     font-weight: 600;
     color: #bb86fc;

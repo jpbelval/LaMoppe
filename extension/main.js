@@ -1,5 +1,3 @@
-document.body.style.border = "2px solid red";
-
 // Variables
 const lockKey = ["Shift", "Alt"]
 let lock = false;
