@@ -1,8 +1,9 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import os
 import routes
 from flask_cors import CORS
 from intelligence.app import SafetyIntelligence
+import json
 
 
 app = Flask(__name__)
@@ -16,12 +17,21 @@ safetyIntelligence = SafetyIntelligence()
 def classify():
         text = request.json.get("prompt")
         safetyAnalysis = safetyIntelligence.analyze_prompt(text)
-        safetyAnalysis = jsonify(safetyAnalysis)
-        return jsonify({
-            "message": "Received successfully",
-            "received": text
-        })
+        json_result = safetyAnalysis.to_json()
+        return json_result
 
+@app.route("/stats/dashboard")
+def dashboard():
+    return render_template('dashboard.html')
+
+@app.route('/stats/fetch')
+def getStats():
+    data = {
+        "labels": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        "values": [12, 19, 3, 5, 2, 3, 7],
+        "avg": 7.3
+    }
+    return jsonify(data)
 
 @app.route("/test-db", methods=["GET"])
 def test():

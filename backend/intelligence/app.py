@@ -2,8 +2,9 @@ from smolagents import CodeAgent, FinalAnswerTool, InferenceClientModel
 from dotenv import load_dotenv
 import yaml
 import os
+import json
 
-class SafetyAnalysis():
+class SafetyAnalysis:
     def __init__(self, risk_level, private_data, safe_prompt ):
         self.risk_level =  risk_level
         self.private_data = private_data
@@ -12,6 +13,13 @@ class SafetyAnalysis():
     @classmethod
     def from_json(cls, json_data):
         return cls(**json_data)
+
+    def to_json(self):
+        return json.dumps({
+            'risk_level': self.risk_level,
+            'private_data': self.private_data,
+            'safe_prompt': self.safe_prompt
+        })
 
 class SafetyIntelligence:
     def __init__(self):
