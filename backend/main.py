@@ -4,6 +4,7 @@ import routes
 from flask_cors import CORS
 from intelligence.app import SafetyIntelligence
 import json
+from dashboard_logic import get_mock_data, get_new_recent_ratings, get_rating_color_class, get_risk_color_class
 
 
 app = Flask(__name__)
@@ -12,6 +13,14 @@ CHROMA_HOST = os.getenv("CHROMA_HOST", "localhost")
 chroma_client = None
 CORS(app, origins="*")
 safetyIntelligence = SafetyIntelligence()
+
+# Register Jinja2 helper functions
+@app.context_processor
+def utility_processor():
+    return {
+        'get_rating_color_class': get_rating_color_class,
+        'get_risk_color_class': get_risk_color_class
+    }
 
 @app.route("/classifyText", methods=["POST"])
 def classify():
@@ -22,7 +31,8 @@ def classify():
 
 @app.route("/stats/dashboard")
 def dashboard():
-    return render_template('dashboard.html')
+    data = get_mock_data()
+    return render_template('index.html', **data)
 
 @app.route('/stats/fetch')
 def getStats():
@@ -33,10 +43,27 @@ def getStats():
     }
     return jsonify(data)
 
+@app.route('/api/recent-ratings')
+def recent_ratings():
+    """API endpoint for polling recent ratings from the dashboard."""
+    recent_data = get_new_recent_ratings()
+    return jsonify(recent_data)
+
+@app.route('/api/dashboard-data')
+def dashboard_data():
+    """API endpoint for polling all dashboard data."""
+    data = get_mock_data()
+    return jsonify(data)
+
 @app.route("/createDocument", methods=["POST"])
 def create_doc():
         data = request.json
         return routes.create_document(data.get("collection"), data.get("text"), data.get("metadata"))
+
+@app.route("/createRating", methods=["POST"])
+def create_data():
+        data = request.json
+        return routes.create_rating(data.get("risk_level"), data.get("rating"), data.get("problems"), data.get("safe_prompt"))
 
 @app.route("/getDocument", methods=["GET"])
 def get_doc():

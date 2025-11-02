@@ -97,4 +97,23 @@ def delete_collection(collection_name):
         except Exception as e:
                 return {"success": False, "error": str(e)}
 
+def create_rating(risk_level, rating, problems, safe_prompt):
+        try:
+                client = get_db_client()
+                collection = client.get_or_create_collection(name="JP_la_collection")
+                doc_id = uuid4()
 
+                metadata = {
+                        "risk_level": risk_level,
+                        "rating": rating,
+                        "problems": problems
+                }
+                collection.add(
+                        documents=[safe_prompt],
+                        metadatas=[metadata],
+                        ids=[str(doc_id)]   
+                )
+                return {"success": True, "results": {"collection": "JP_la_collection", "id": doc_id, "status": "created"}}
+
+        except Exception as e:
+                return {"success": False, "error": str(e)}
