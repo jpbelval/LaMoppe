@@ -3,3 +3,4 @@ python-dotenv
 protobuf
 sentencepiece
 llama-cpp-python
+smolagents[litellm]

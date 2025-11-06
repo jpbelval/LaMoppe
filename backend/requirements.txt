@@ -3,3 +3,4 @@ flask-cors
 chromadb
 smolagents==1.22.0
 python-dotenv
+smolagents[litellm]

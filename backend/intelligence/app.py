@@ -22,22 +22,13 @@ class SafetyAnalysis:
         })
 
 class SafetyIntelligence:
-    def __init__(self, local=False):
+    def __init__(self, local=True):
         load_dotenv()
         final_answer = FinalAnswerTool()
         if local:
-            # llm_model = AutoModelForCausalLM.from_pretrained(
-            #                 "meta-llama/Llama-3.1-8B-Instruct",
-            #                 torch_dtype=torch.bfloat16,
-            #                 device_map="auto",
-            #             )
-            # tokenizer = AutoTokenizer.from_pretrained("meta-llama/Llama-3.1-8B-Instruct")
-            # model = LocalInferenceClient(llm_model, tokenizer)
             model = LiteLLMModel(
-                model_id="ollama_chat/finetuned_ai",
+                model_id="ollama_chat/llama3.1:8b",
                 api_base="http://localhost:11434",
-                # You may also want to increase context window (num_ctx) for complex tasks
-                # num_ctx=8192, 
             )
         else:
             model = InferenceClientModel(model_id='meta-llama/Llama-3.1-8B-Instruct')
